@@ -1,0 +1,186 @@
+//
+//  PrefixHeader.pch
+//  ZhengTaiCSRMeshLamp
+//
+//  Created by hao123 on 2017/2/23.
+//  Copyright © 2017年 arrfu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import "UIBarButtonItem+Extension.h"
+#import "LXLogTools.h"
+//#import "UIView+Extension.h"
+#import "UIView+JFExtension.h"
+
+#import "LXTool.h"
+#import "LXLogTools.h"
+#import "Singleton.h"
+#import "Toast+UIView.h"
+
+#import "MyCocoaLumberJackCommon.h"
+#import "MJExtension.h"
+#import "HYBNetworking.h"
+#import "MBProgressHUD.h"
+
+#endif
+
+
+
+#define kSleep @"kSleep"
+#define NAVHEIGHT 44
+//版本号
+#define CURRENTVERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define screenBound [[UIScreen mainScreen] bounds]
+
+#define kNotiOpentheSidebar @"kNotiOpentheSidebar"
+
+
+#define kScreenWidth [UIScreen mainScreen].applicationFrame.size.width
+#define kScreenHeight [UIScreen mainScreen].applicationFrame.size.height
+#define kIsIpad (kScreenHeight == 460)
+
+#define kNavHeight 64
+#define kDockHeight 49
+
+//4.获取颜色
+#define LXColor(r,g,b) ([UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1])
+
+
+//Cell 的背景色
+#define kCellBackgroundColor [UIColor colorWithRed:1 green:1 blue:1 alpha:0.08]//[UIColor colorWithRed:100/255.0 green:100/255.0 blue:100/255.0 alpha:0.3]
+
+
+//获取十六进制颜色值
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+// 主文本颜色
+#define mainTextColor       [UIColor colorWithWhite:1.0 alpha:0.75] // 灰白色
+#define mainTextColorSelect LXColor(255,112,0) // 橙色
+
+// 分割线颜色 淡灰色
+//#define mainLineColor LXColor(0xd9,0xdf,0xe8) // C2
+
+// 主背景色
+#define mainBgColor LXColor(237,238,239) // C3 灰白
+
+// 副背景色
+#define secBgColor LXColor(82,82,82) // 灰色
+
+// 警告提示色
+//#define mainWarningColor LXColor(0xff,0x2f,0x51) // C3
+
+// 主字体
+#define mainFontSize(x) [UIFont fontWithName:@"NotoSansHans-Medium" size:(x)];
+
+
+
+// 弹出提示框
+#define LXShowToast(titleString) [[UIApplication sharedApplication].keyWindow makeToast:LXLocalizedString(titleString) duration:1.0f position:@"center"]
+
+//本地国际化
+#define LXLocalizedString(key) \
+[LXTool DPLocalizedString:(key)]
+
+#define C2I(c) ((c >= '0' && c<='9') ? (c-'0') : ((c >= 'a' && c <= 'z') ? (c - 'a' + 10): ((c >= 'A' && c <= 'Z')?(c - 'A' + 10):(-1))))
+
+#ifdef DEBUG
+#define LXLog(...) DDLogVerbose(@"%s %d \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+//#define LXLog(...)  NSLog(@"%s %d \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define LXLog(...)
+#endif
+
+
+
+#define PropertyString(p) @property (nonatomic,strong) NSString   *p;
+#define PropertyFloat(p)  @property (nonatomic) float             p;
+#define PropertyDouble(p) @property (nonatomic) double            p;
+#define PropertyInt(p)    @property (nonatomic) NSInteger         p;
+#define PropertyUInt(p)   @property (nonatomic) NSUInteger        p;
+#define PropertyBool(p)   @property (nonatomic) BOOL              p;
+#define PropertyNumber(p)   @property (nonatomic,strong) NSNumber *p;
+
+
+#ifndef WEAKSELF_SS
+#define WEAKSELF_SS __weak __typeof(self)weakSelf = self;
+#endif
+
+
+
+
+
+// 限制键盘输入为数字和字母
+#define ALPHANUM @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+#define LX_ReName_MaxLength 16 // 最大命名长度
+
+//获取版本号
+
+#define VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define kbluetoothConnectionChange @"kbluetoothConnectionChange"
+
+#define kHeadPhoneOut @"kHeadPhoneOut"
+
+// 适配机型
+#define Is4S ([UIScreen mainScreen].bounds.size.height == 480)
+
+// 高度适配参数
+// iphone5 548  iphone6 647  iphone6Plus 736
+//#define kScaleH (kScreenHeight==647? 1.17429:(kScreenHeight==736? 1.29577:1))
+#define kScaleH (kScreenHeight==647? 1:(kScreenHeight==736? 1.137557:0.84698))
+
+#define kCardPlugChangeState               @"kCardPlugChangeState"
+#define kUHostPlugChangeState              @"kUHostPlugChangeState"
+
+#define kbluetoothDeviceModeDidChangeState @"bluetoothDeviceModeDidChangeState"
+
+#define kNoDownMusic                       @"kNoDownMusic"
+
+#define kForelanch                         @"kForelanch"
+
+//#define kCustomColorH   LXColor(120, 127, 140)
+
+// 保存组地址信息
+#define kLXGroupAddressDictArray @"kLXGroupAddressDictArray"
+
+// 保存快捷颜色
+#define kLXSaveColorInfo @"kLXSaveColorInfo"
+
+// 明亮
+#define kLXFasterColorBrightnessH UIColorFromRGB(0xf9f9f9)
+// 柔和
+#define kLXFasterColorBrightnessM UIColorFromRGB(0xced3d6)
+// 微亮
+#define kLXFasterColorBrightnessL UIColorFromRGB(0x8f9497)
+
+
+//// 明亮
+//#define kLXFasterColorBrightnessH [UIColor colorWithRed:252/255.0 green:252/255.0 blue:252/255.0 alpha:1.0]
+//// 柔和
+//#define kLXFasterColorBrightnessM [UIColor colorWithRed:245/255.0 green:206/255.0 blue:89/255.0 alpha:1.0]
+//// 微亮
+//#define kLXFasterColorBrightnessL mainTextColor
+
+
+// int转10进制字符串
+#define LXIntToString(a) ([NSString stringWithFormat:@"%d",a])
+
+// 公共通知 //
+// 添加灯完成后，需要重新扫描组网内存在设备
+#define LXReScanAllDeviceAfterAddingLight @"LXReSacnAllDeviceAfterAddingLight"
+
+// 蓝牙断开或连接通知
+#define LXBTConnectOrDisconnectNoti @"LXBTConnectOrDisconnectNoti"
+
+// 网络请求地址
+#define LXNetworkBaseUrl @"https://banks.snaillove.com/mesh"
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ZhengTaiCSRMeshLamp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>495BD5971E5F1DAD00D3F202</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>495BD5B01E5F1DAE00D3F202</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>495BD5BB1E5F1DAE00D3F202</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

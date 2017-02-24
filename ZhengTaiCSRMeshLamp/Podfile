@@ -1,0 +1,15 @@
+target 'ZhengTaiCSRMeshLamp' do
+
+platform :ios, '7.0'
+pod 'AFNetworking' #', '~> 3.0.0'
+
+platform :ios, "7.0"
+pod 'MJRefresh'
+pod 'MJExtension'   #3.0.13
+#pod 'CocoaLumberjack'
+pod 'CocoaLumberjack', '~> 2.4.0'
+pod 'FMDB' #2.6.2
+pod 'MBProgressHUD'#, '~> 1.0.0'
+pod 'UMengAnalytics'
+
+end

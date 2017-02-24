@@ -1,0 +1,1221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		495BD59D1E5F1DAE00D3F202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD59C1E5F1DAE00D3F202 /* main.m */; };
+		495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5A21E5F1DAE00D3F202 /* ViewController.m */; };
+		495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A41E5F1DAE00D3F202 /* Main.storyboard */; };
+		495BD5A81E5F1DAE00D3F202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A71E5F1DAE00D3F202 /* Assets.xcassets */; };
+		495BD5AB1E5F1DAE00D3F202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A91E5F1DAE00D3F202 /* LaunchScreen.storyboard */; };
+		495BD5B61E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5B51E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.m */; };
+		495BD5C11E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5C01E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.m */; };
+		495BD6801E5F1ECD00D3F202 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD67F1E5F1ECD00D3F202 /* AppDelegate.m */; };
+		495BD71B1E5F214E00D3F202 /* LXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD69E1E5F214E00D3F202 /* LXBaseViewController.m */; };
+		495BD71C1E5F214E00D3F202 /* LXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6A01E5F214E00D3F202 /* LXNavigationController.m */; };
+		495BD71D1E5F214E00D3F202 /* LXSecondBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6A21E5F214E00D3F202 /* LXSecondBaseViewController.m */; };
+		495BD71E1E5F214E00D3F202 /* LXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6A51E5F214E00D3F202 /* LXMainViewController.m */; };
+		495BD71F1E5F214E00D3F202 /* LXDock.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6A81E5F214E00D3F202 /* LXDock.m */; };
+		495BD7201E5F214E00D3F202 /* LXDockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6AA1E5F214E00D3F202 /* LXDockController.m */; };
+		495BD7211E5F214E00D3F202 /* LXDockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6AC1E5F214E00D3F202 /* LXDockItem.m */; };
+		495BD7221E5F214E00D3F202 /* LXNotifiCationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6AF1E5F214E00D3F202 /* LXNotifiCationObject.m */; };
+		495BD7231E5F214E00D3F202 /* ZYWContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6B31E5F214E00D3F202 /* ZYWContactViewController.m */; };
+		495BD7241E5F214E00D3F202 /* ZYWSideTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6B61E5F214E00D3F202 /* ZYWSideTableView.m */; };
+		495BD7251E5F214E00D3F202 /* ZYWSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6B81E5F214E00D3F202 /* ZYWSideView.m */; };
+		495BD7261E5F214E00D3F202 /* LXGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6BA1E5F214E00D3F202 /* LXGuideViewController.m */; };
+		495BD7271E5F214E00D3F202 /* ZYWRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6BD1E5F214E00D3F202 /* ZYWRootViewController.m */; };
+		495BD7281E5F214E00D3F202 /* ZYWMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6C01E5F214E00D3F202 /* ZYWMessageViewController.m */; };
+		495BD7291E5F214E00D3F202 /* MYDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6C21E5F214E00D3F202 /* MYDataViewController.m */; };
+		495BD72A1E5F214E00D3F202 /* ZYWContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6C41E5F214E00D3F202 /* ZYWContainerViewController.m */; };
+		495BD72C1E5F214E00D3F202 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6D11E5F214E00D3F202 /* Toast+UIView.m */; };
+		495BD72D1E5F214E00D3F202 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6D31E5F214E00D3F202 /* UIBarButtonItem+Extension.m */; };
+		495BD72E1E5F214E00D3F202 /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6D51E5F214E00D3F202 /* UIButton+EnlargeEdge.m */; };
+		495BD72F1E5F214E00D3F202 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6D71E5F214E00D3F202 /* UIButton+ImageTitleSpacing.m */; };
+		495BD7301E5F214E00D3F202 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6D91E5F214E00D3F202 /* UIImage+FlatUI.m */; };
+		495BD7311E5F214E00D3F202 /* UISlider+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6DB1E5F214E00D3F202 /* UISlider+touch.m */; };
+		495BD7321E5F214E00D3F202 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6DD1E5F214E00D3F202 /* UIView+Extension.m */; };
+		495BD7331E5F214E00D3F202 /* UIView+SHCZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6DF1E5F214E00D3F202 /* UIView+SHCZExt.m */; };
+		495BD7341E5F214E00D3F202 /* HYBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6E31E5F214E00D3F202 /* HYBNetworking.m */; };
+		495BD7351E5F214E00D3F202 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6E61E5F214E00D3F202 /* Reachability.m */; };
+		495BD7361E5F214E00D3F202 /* JFIntervalTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6EA1E5F214E00D3F202 /* JFIntervalTimer.m */; };
+		495BD7371E5F214E00D3F202 /* LXColorFilterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6EC1E5F214E00D3F202 /* LXColorFilterTool.m */; };
+		495BD7381E5F214E00D3F202 /* LXDelayBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6EE1E5F214E00D3F202 /* LXDelayBlockTimer.m */; };
+		495BD7391E5F214E00D3F202 /* LXLogTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6F01E5F214E00D3F202 /* LXLogTools.m */; };
+		495BD73A1E5F214E00D3F202 /* LXRGBTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6F21E5F214E00D3F202 /* LXRGBTools.m */; };
+		495BD73B1E5F214E00D3F202 /* LXTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6F41E5F214E00D3F202 /* LXTool.m */; };
+		495BD73C1E5F214E00D3F202 /* RGB-HSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6F61E5F214E00D3F202 /* RGB-HSL.m */; };
+		495BD73D1E5F214E00D3F202 /* NSArray+ ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6F91E5F214E00D3F202 /* NSArray+ ZXPUnicode.m */; };
+		495BD73E1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6FC1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.m */; };
+		495BD73F1E5F214E00D3F202 /* NSObject+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD6FE1E5F214E00D3F202 /* NSObject+ZXPUnicode.m */; };
+		495BD7591E5F241B00D3F202 /* LXSettingMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD7541E5F241B00D3F202 /* LXSettingMainController.m */; };
+		495BD7771E5F29C300D3F202 /* UIView+JFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD7761E5F29C300D3F202 /* UIView+JFExtension.m */; };
+		495BD7A31E5F319500D3F202 /* LXEreaMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD79E1E5F319500D3F202 /* LXEreaMainController.m */; };
+		495BD7AC1E5F319C00D3F202 /* LXSceneMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD7A71E5F319C00D3F202 /* LXSceneMainController.m */; };
+		495BD7B51E5F31A200D3F202 /* LXDeviceMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD7B01E5F31A200D3F202 /* LXDeviceMainController.m */; };
+		B04E370255B712A3D455D556 /* libPods-ZhengTaiCSRMeshLamp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7404FDFB6CFF0A415F14966 /* libPods-ZhengTaiCSRMeshLamp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		495BD5B21E5F1DAE00D3F202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495BD5901E5F1DAD00D3F202 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495BD5971E5F1DAD00D3F202;
+			remoteInfo = ZhengTaiCSRMeshLamp;
+		};
+		495BD5BD1E5F1DAE00D3F202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495BD5901E5F1DAD00D3F202 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495BD5971E5F1DAD00D3F202;
+			remoteInfo = ZhengTaiCSRMeshLamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0868644104529C09B927215F /* Pods-ZhengTaiCSRMeshLamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhengTaiCSRMeshLamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhengTaiCSRMeshLamp/Pods-ZhengTaiCSRMeshLamp.release.xcconfig"; sourceTree = "<group>"; };
+		495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhengTaiCSRMeshLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		495BD59C1E5F1DAE00D3F202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		495BD59E1E5F1DAE00D3F202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		495BD5A11E5F1DAE00D3F202 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		495BD5A21E5F1DAE00D3F202 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		495BD5A51E5F1DAE00D3F202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		495BD5A71E5F1DAE00D3F202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		495BD5AA1E5F1DAE00D3F202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		495BD5AC1E5F1DAE00D3F202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495BD5B11E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhengTaiCSRMeshLampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495BD5B51E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhengTaiCSRMeshLampTests.m; sourceTree = "<group>"; };
+		495BD5B71E5F1DAE00D3F202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495BD5BC1E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhengTaiCSRMeshLampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495BD5C01E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhengTaiCSRMeshLampUITests.m; sourceTree = "<group>"; };
+		495BD5C21E5F1DAE00D3F202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495BD67F1E5F1ECD00D3F202 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		495BD6811E5F1EEC00D3F202 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		495BD69D1E5F214E00D3F202 /* LXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXBaseViewController.h; sourceTree = "<group>"; };
+		495BD69E1E5F214E00D3F202 /* LXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXBaseViewController.m; sourceTree = "<group>"; };
+		495BD69F1E5F214E00D3F202 /* LXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNavigationController.h; sourceTree = "<group>"; };
+		495BD6A01E5F214E00D3F202 /* LXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNavigationController.m; sourceTree = "<group>"; };
+		495BD6A11E5F214E00D3F202 /* LXSecondBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSecondBaseViewController.h; sourceTree = "<group>"; };
+		495BD6A21E5F214E00D3F202 /* LXSecondBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSecondBaseViewController.m; sourceTree = "<group>"; };
+		495BD6A41E5F214E00D3F202 /* LXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMainViewController.h; sourceTree = "<group>"; };
+		495BD6A51E5F214E00D3F202 /* LXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMainViewController.m; sourceTree = "<group>"; };
+		495BD6A71E5F214E00D3F202 /* LXDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDock.h; sourceTree = "<group>"; };
+		495BD6A81E5F214E00D3F202 /* LXDock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDock.m; sourceTree = "<group>"; };
+		495BD6A91E5F214E00D3F202 /* LXDockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDockController.h; sourceTree = "<group>"; };
+		495BD6AA1E5F214E00D3F202 /* LXDockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDockController.m; sourceTree = "<group>"; };
+		495BD6AB1E5F214E00D3F202 /* LXDockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDockItem.h; sourceTree = "<group>"; };
+		495BD6AC1E5F214E00D3F202 /* LXDockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDockItem.m; sourceTree = "<group>"; };
+		495BD6AE1E5F214E00D3F202 /* LXNotifiCationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNotifiCationObject.h; sourceTree = "<group>"; };
+		495BD6AF1E5F214E00D3F202 /* LXNotifiCationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNotifiCationObject.m; sourceTree = "<group>"; };
+		495BD6B21E5F214E00D3F202 /* ZYWContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWContactViewController.h; sourceTree = "<group>"; };
+		495BD6B31E5F214E00D3F202 /* ZYWContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWContactViewController.m; sourceTree = "<group>"; };
+		495BD6B51E5F214E00D3F202 /* ZYWSideTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWSideTableView.h; sourceTree = "<group>"; };
+		495BD6B61E5F214E00D3F202 /* ZYWSideTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWSideTableView.m; sourceTree = "<group>"; };
+		495BD6B71E5F214E00D3F202 /* ZYWSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWSideView.h; sourceTree = "<group>"; };
+		495BD6B81E5F214E00D3F202 /* ZYWSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWSideView.m; sourceTree = "<group>"; };
+		495BD6B91E5F214E00D3F202 /* LXGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGuideViewController.h; sourceTree = "<group>"; };
+		495BD6BA1E5F214E00D3F202 /* LXGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGuideViewController.m; sourceTree = "<group>"; };
+		495BD6BC1E5F214E00D3F202 /* ZYWRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWRootViewController.h; sourceTree = "<group>"; };
+		495BD6BD1E5F214E00D3F202 /* ZYWRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWRootViewController.m; sourceTree = "<group>"; };
+		495BD6BF1E5F214E00D3F202 /* ZYWMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWMessageViewController.h; sourceTree = "<group>"; };
+		495BD6C01E5F214E00D3F202 /* ZYWMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWMessageViewController.m; sourceTree = "<group>"; };
+		495BD6C11E5F214E00D3F202 /* MYDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDataViewController.h; sourceTree = "<group>"; };
+		495BD6C21E5F214E00D3F202 /* MYDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDataViewController.m; sourceTree = "<group>"; };
+		495BD6C31E5F214E00D3F202 /* ZYWContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWContainerViewController.h; sourceTree = "<group>"; };
+		495BD6C41E5F214E00D3F202 /* ZYWContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWContainerViewController.m; sourceTree = "<group>"; };
+		495BD6D01E5F214E00D3F202 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		495BD6D11E5F214E00D3F202 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		495BD6D21E5F214E00D3F202 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		495BD6D31E5F214E00D3F202 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		495BD6D41E5F214E00D3F202 /* UIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
+		495BD6D51E5F214E00D3F202 /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
+		495BD6D61E5F214E00D3F202 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
+		495BD6D71E5F214E00D3F202 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
+		495BD6D81E5F214E00D3F202 /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
+		495BD6D91E5F214E00D3F202 /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
+		495BD6DA1E5F214E00D3F202 /* UISlider+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+touch.h"; sourceTree = "<group>"; };
+		495BD6DB1E5F214E00D3F202 /* UISlider+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+touch.m"; sourceTree = "<group>"; };
+		495BD6DC1E5F214E00D3F202 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		495BD6DD1E5F214E00D3F202 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		495BD6DE1E5F214E00D3F202 /* UIView+SHCZExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHCZExt.h"; sourceTree = "<group>"; };
+		495BD6DF1E5F214E00D3F202 /* UIView+SHCZExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHCZExt.m"; sourceTree = "<group>"; };
+		495BD6E21E5F214E00D3F202 /* HYBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBNetworking.h; sourceTree = "<group>"; };
+		495BD6E31E5F214E00D3F202 /* HYBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBNetworking.m; sourceTree = "<group>"; };
+		495BD6E41E5F214E00D3F202 /* MyCocoaLumberJackCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCocoaLumberJackCommon.h; sourceTree = "<group>"; };
+		495BD6E51E5F214E00D3F202 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		495BD6E61E5F214E00D3F202 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		495BD6E91E5F214E00D3F202 /* JFIntervalTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFIntervalTimer.h; sourceTree = "<group>"; };
+		495BD6EA1E5F214E00D3F202 /* JFIntervalTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFIntervalTimer.m; sourceTree = "<group>"; };
+		495BD6EB1E5F214E00D3F202 /* LXColorFilterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXColorFilterTool.h; sourceTree = "<group>"; };
+		495BD6EC1E5F214E00D3F202 /* LXColorFilterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXColorFilterTool.m; sourceTree = "<group>"; };
+		495BD6ED1E5F214E00D3F202 /* LXDelayBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDelayBlockTimer.h; sourceTree = "<group>"; };
+		495BD6EE1E5F214E00D3F202 /* LXDelayBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDelayBlockTimer.m; sourceTree = "<group>"; };
+		495BD6EF1E5F214E00D3F202 /* LXLogTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLogTools.h; sourceTree = "<group>"; };
+		495BD6F01E5F214E00D3F202 /* LXLogTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLogTools.m; sourceTree = "<group>"; };
+		495BD6F11E5F214E00D3F202 /* LXRGBTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRGBTools.h; sourceTree = "<group>"; };
+		495BD6F21E5F214E00D3F202 /* LXRGBTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRGBTools.m; sourceTree = "<group>"; };
+		495BD6F31E5F214E00D3F202 /* LXTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTool.h; sourceTree = "<group>"; };
+		495BD6F41E5F214E00D3F202 /* LXTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTool.m; sourceTree = "<group>"; };
+		495BD6F51E5F214E00D3F202 /* RGB-HSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGB-HSL.h"; sourceTree = "<group>"; };
+		495BD6F61E5F214E00D3F202 /* RGB-HSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RGB-HSL.m"; sourceTree = "<group>"; };
+		495BD6F71E5F214E00D3F202 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		495BD6F91E5F214E00D3F202 /* NSArray+ ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ ZXPUnicode.m"; sourceTree = "<group>"; };
+		495BD6FA1E5F214E00D3F202 /* NSArray+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZXPUnicode.h"; sourceTree = "<group>"; };
+		495BD6FB1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXPUnicode.h"; sourceTree = "<group>"; };
+		495BD6FC1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXPUnicode.m"; sourceTree = "<group>"; };
+		495BD6FD1E5F214E00D3F202 /* NSObject+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXPUnicode.h"; sourceTree = "<group>"; };
+		495BD6FE1E5F214E00D3F202 /* NSObject+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXPUnicode.m"; sourceTree = "<group>"; };
+		495BD7531E5F241B00D3F202 /* LXSettingMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSettingMainController.h; sourceTree = "<group>"; };
+		495BD7541E5F241B00D3F202 /* LXSettingMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSettingMainController.m; sourceTree = "<group>"; };
+		495BD7751E5F29C300D3F202 /* UIView+JFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JFExtension.h"; sourceTree = "<group>"; };
+		495BD7761E5F29C300D3F202 /* UIView+JFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JFExtension.m"; sourceTree = "<group>"; };
+		495BD79D1E5F319500D3F202 /* LXEreaMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXEreaMainController.h; sourceTree = "<group>"; };
+		495BD79E1E5F319500D3F202 /* LXEreaMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXEreaMainController.m; sourceTree = "<group>"; };
+		495BD7A61E5F319C00D3F202 /* LXSceneMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSceneMainController.h; sourceTree = "<group>"; };
+		495BD7A71E5F319C00D3F202 /* LXSceneMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSceneMainController.m; sourceTree = "<group>"; };
+		495BD7AF1E5F31A200D3F202 /* LXDeviceMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDeviceMainController.h; sourceTree = "<group>"; };
+		495BD7B01E5F31A200D3F202 /* LXDeviceMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDeviceMainController.m; sourceTree = "<group>"; };
+		D7404FDFB6CFF0A415F14966 /* libPods-ZhengTaiCSRMeshLamp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhengTaiCSRMeshLamp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86315581BE7B736A1F357E5 /* Pods-ZhengTaiCSRMeshLamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhengTaiCSRMeshLamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhengTaiCSRMeshLamp/Pods-ZhengTaiCSRMeshLamp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		495BD5951E5F1DAD00D3F202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04E370255B712A3D455D556 /* libPods-ZhengTaiCSRMeshLamp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495BD5AE1E5F1DAE00D3F202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495BD5B91E5F1DAE00D3F202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495BD58F1E5F1DAD00D3F202 = {
+			isa = PBXGroup;
+			children = (
+				495BD59A1E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp */,
+				495BD5B41E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests */,
+				495BD5BF1E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests */,
+				495BD5991E5F1DAD00D3F202 /* Products */,
+				9B961E7F28E3819D738F4A69 /* Pods */,
+				E78AA0AD2DFAC1AA880B2A28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		495BD5991E5F1DAD00D3F202 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */,
+				495BD5B11E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.xctest */,
+				495BD5BC1E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495BD59A1E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6821E5F214E00D3F202 /* Classes */,
+				495BD5A11E5F1DAE00D3F202 /* ViewController.h */,
+				495BD5A21E5F1DAE00D3F202 /* ViewController.m */,
+				495BD5A41E5F1DAE00D3F202 /* Main.storyboard */,
+				495BD5A71E5F1DAE00D3F202 /* Assets.xcassets */,
+				495BD5A91E5F1DAE00D3F202 /* LaunchScreen.storyboard */,
+				495BD5AC1E5F1DAE00D3F202 /* Info.plist */,
+				495BD59B1E5F1DAE00D3F202 /* Supporting Files */,
+			);
+			path = ZhengTaiCSRMeshLamp;
+			sourceTree = "<group>";
+		};
+		495BD59B1E5F1DAE00D3F202 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495BD59E1E5F1DAE00D3F202 /* AppDelegate.h */,
+				495BD67F1E5F1ECD00D3F202 /* AppDelegate.m */,
+				495BD6811E5F1EEC00D3F202 /* PrefixHeader.pch */,
+				495BD59C1E5F1DAE00D3F202 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495BD5B41E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests */ = {
+			isa = PBXGroup;
+			children = (
+				495BD5B51E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.m */,
+				495BD5B71E5F1DAE00D3F202 /* Info.plist */,
+			);
+			path = ZhengTaiCSRMeshLampTests;
+			sourceTree = "<group>";
+		};
+		495BD5BF1E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests */ = {
+			isa = PBXGroup;
+			children = (
+				495BD5C01E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.m */,
+				495BD5C21E5F1DAE00D3F202 /* Info.plist */,
+			);
+			path = ZhengTaiCSRMeshLampUITests;
+			sourceTree = "<group>";
+		};
+		495BD6821E5F214E00D3F202 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7AD1E5F31A200D3F202 /* Device */,
+				495BD7A41E5F319B00D3F202 /* Scene */,
+				495BD79B1E5F319500D3F202 /* Erea */,
+				495BD7511E5F241B00D3F202 /* Setting */,
+				495BD69B1E5F214E00D3F202 /* Main */,
+				495BD6CD1E5F214E00D3F202 /* Resources */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		495BD69B1E5F214E00D3F202 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				495BD69C1E5F214E00D3F202 /* Base */,
+				495BD6A31E5F214E00D3F202 /* Controller */,
+				495BD6A61E5F214E00D3F202 /* Dock */,
+				495BD6AD1E5F214E00D3F202 /* model */,
+				495BD6B01E5F214E00D3F202 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		495BD69C1E5F214E00D3F202 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				495BD69D1E5F214E00D3F202 /* LXBaseViewController.h */,
+				495BD69E1E5F214E00D3F202 /* LXBaseViewController.m */,
+				495BD69F1E5F214E00D3F202 /* LXNavigationController.h */,
+				495BD6A01E5F214E00D3F202 /* LXNavigationController.m */,
+				495BD6A11E5F214E00D3F202 /* LXSecondBaseViewController.h */,
+				495BD6A21E5F214E00D3F202 /* LXSecondBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		495BD6A31E5F214E00D3F202 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6A41E5F214E00D3F202 /* LXMainViewController.h */,
+				495BD6A51E5F214E00D3F202 /* LXMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		495BD6A61E5F214E00D3F202 /* Dock */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6A71E5F214E00D3F202 /* LXDock.h */,
+				495BD6A81E5F214E00D3F202 /* LXDock.m */,
+				495BD6A91E5F214E00D3F202 /* LXDockController.h */,
+				495BD6AA1E5F214E00D3F202 /* LXDockController.m */,
+				495BD6AB1E5F214E00D3F202 /* LXDockItem.h */,
+				495BD6AC1E5F214E00D3F202 /* LXDockItem.m */,
+			);
+			path = Dock;
+			sourceTree = "<group>";
+		};
+		495BD6AD1E5F214E00D3F202 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6AE1E5F214E00D3F202 /* LXNotifiCationObject.h */,
+				495BD6AF1E5F214E00D3F202 /* LXNotifiCationObject.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		495BD6B01E5F214E00D3F202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6B11E5F214E00D3F202 /* Contact */,
+				495BD6B41E5F214E00D3F202 /* Container */,
+				495BD6B91E5F214E00D3F202 /* LXGuideViewController.h */,
+				495BD6BA1E5F214E00D3F202 /* LXGuideViewController.m */,
+				495BD6BB1E5F214E00D3F202 /* Main */,
+				495BD6BE1E5F214E00D3F202 /* Message */,
+				495BD6C11E5F214E00D3F202 /* MYDataViewController.h */,
+				495BD6C21E5F214E00D3F202 /* MYDataViewController.m */,
+				495BD6C31E5F214E00D3F202 /* ZYWContainerViewController.h */,
+				495BD6C41E5F214E00D3F202 /* ZYWContainerViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		495BD6B11E5F214E00D3F202 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6B21E5F214E00D3F202 /* ZYWContactViewController.h */,
+				495BD6B31E5F214E00D3F202 /* ZYWContactViewController.m */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		495BD6B41E5F214E00D3F202 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6B51E5F214E00D3F202 /* ZYWSideTableView.h */,
+				495BD6B61E5F214E00D3F202 /* ZYWSideTableView.m */,
+				495BD6B71E5F214E00D3F202 /* ZYWSideView.h */,
+				495BD6B81E5F214E00D3F202 /* ZYWSideView.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		495BD6BB1E5F214E00D3F202 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6BC1E5F214E00D3F202 /* ZYWRootViewController.h */,
+				495BD6BD1E5F214E00D3F202 /* ZYWRootViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		495BD6BE1E5F214E00D3F202 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6BF1E5F214E00D3F202 /* ZYWMessageViewController.h */,
+				495BD6C01E5F214E00D3F202 /* ZYWMessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		495BD6CD1E5F214E00D3F202 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6CE1E5F214E00D3F202 /* Bluetooth */,
+				495BD6CF1E5F214E00D3F202 /* Category */,
+				495BD6E01E5F214E00D3F202 /* Lib */,
+				495BD6E71E5F214E00D3F202 /* Other */,
+				495BD6E81E5F214E00D3F202 /* Tools */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		495BD6CE1E5F214E00D3F202 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		495BD6CF1E5F214E00D3F202 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6D01E5F214E00D3F202 /* Toast+UIView.h */,
+				495BD6D11E5F214E00D3F202 /* Toast+UIView.m */,
+				495BD6D21E5F214E00D3F202 /* UIBarButtonItem+Extension.h */,
+				495BD6D31E5F214E00D3F202 /* UIBarButtonItem+Extension.m */,
+				495BD6D41E5F214E00D3F202 /* UIButton+EnlargeEdge.h */,
+				495BD6D51E5F214E00D3F202 /* UIButton+EnlargeEdge.m */,
+				495BD6D61E5F214E00D3F202 /* UIButton+ImageTitleSpacing.h */,
+				495BD6D71E5F214E00D3F202 /* UIButton+ImageTitleSpacing.m */,
+				495BD6D81E5F214E00D3F202 /* UIImage+FlatUI.h */,
+				495BD6D91E5F214E00D3F202 /* UIImage+FlatUI.m */,
+				495BD6DA1E5F214E00D3F202 /* UISlider+touch.h */,
+				495BD6DB1E5F214E00D3F202 /* UISlider+touch.m */,
+				495BD6DC1E5F214E00D3F202 /* UIView+Extension.h */,
+				495BD6DD1E5F214E00D3F202 /* UIView+Extension.m */,
+				495BD7751E5F29C300D3F202 /* UIView+JFExtension.h */,
+				495BD7761E5F29C300D3F202 /* UIView+JFExtension.m */,
+				495BD6DE1E5F214E00D3F202 /* UIView+SHCZExt.h */,
+				495BD6DF1E5F214E00D3F202 /* UIView+SHCZExt.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		495BD6E01E5F214E00D3F202 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6E11E5F214E00D3F202 /* HYBNetworking */,
+				495BD6E41E5F214E00D3F202 /* MyCocoaLumberJackCommon.h */,
+				495BD6E51E5F214E00D3F202 /* Reachability.h */,
+				495BD6E61E5F214E00D3F202 /* Reachability.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		495BD6E11E5F214E00D3F202 /* HYBNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6E21E5F214E00D3F202 /* HYBNetworking.h */,
+				495BD6E31E5F214E00D3F202 /* HYBNetworking.m */,
+			);
+			path = HYBNetworking;
+			sourceTree = "<group>";
+		};
+		495BD6E71E5F214E00D3F202 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		495BD6E81E5F214E00D3F202 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6E91E5F214E00D3F202 /* JFIntervalTimer.h */,
+				495BD6EA1E5F214E00D3F202 /* JFIntervalTimer.m */,
+				495BD6EB1E5F214E00D3F202 /* LXColorFilterTool.h */,
+				495BD6EC1E5F214E00D3F202 /* LXColorFilterTool.m */,
+				495BD6ED1E5F214E00D3F202 /* LXDelayBlockTimer.h */,
+				495BD6EE1E5F214E00D3F202 /* LXDelayBlockTimer.m */,
+				495BD6EF1E5F214E00D3F202 /* LXLogTools.h */,
+				495BD6F01E5F214E00D3F202 /* LXLogTools.m */,
+				495BD6F11E5F214E00D3F202 /* LXRGBTools.h */,
+				495BD6F21E5F214E00D3F202 /* LXRGBTools.m */,
+				495BD6F31E5F214E00D3F202 /* LXTool.h */,
+				495BD6F41E5F214E00D3F202 /* LXTool.m */,
+				495BD6F51E5F214E00D3F202 /* RGB-HSL.h */,
+				495BD6F61E5F214E00D3F202 /* RGB-HSL.m */,
+				495BD6F71E5F214E00D3F202 /* Singleton.h */,
+				495BD6F81E5F214E00D3F202 /* ZXPUnicode */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		495BD6F81E5F214E00D3F202 /* ZXPUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				495BD6F91E5F214E00D3F202 /* NSArray+ ZXPUnicode.m */,
+				495BD6FA1E5F214E00D3F202 /* NSArray+ZXPUnicode.h */,
+				495BD6FB1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.h */,
+				495BD6FC1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.m */,
+				495BD6FD1E5F214E00D3F202 /* NSObject+ZXPUnicode.h */,
+				495BD6FE1E5F214E00D3F202 /* NSObject+ZXPUnicode.m */,
+			);
+			path = ZXPUnicode;
+			sourceTree = "<group>";
+		};
+		495BD7511E5F241B00D3F202 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7521E5F241B00D3F202 /* Controller */,
+				495BD7551E5F241B00D3F202 /* Model */,
+				495BD7561E5F241B00D3F202 /* Other */,
+				495BD7571E5F241B00D3F202 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		495BD7521E5F241B00D3F202 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7531E5F241B00D3F202 /* LXSettingMainController.h */,
+				495BD7541E5F241B00D3F202 /* LXSettingMainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		495BD7551E5F241B00D3F202 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		495BD7561E5F241B00D3F202 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		495BD7571E5F241B00D3F202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7581E5F241B00D3F202 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		495BD7581E5F241B00D3F202 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		495BD79B1E5F319500D3F202 /* Erea */ = {
+			isa = PBXGroup;
+			children = (
+				495BD79C1E5F319500D3F202 /* Controller */,
+				495BD79F1E5F319500D3F202 /* Model */,
+				495BD7A01E5F319500D3F202 /* Other */,
+				495BD7A11E5F319500D3F202 /* View */,
+			);
+			path = Erea;
+			sourceTree = "<group>";
+		};
+		495BD79C1E5F319500D3F202 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				495BD79D1E5F319500D3F202 /* LXEreaMainController.h */,
+				495BD79E1E5F319500D3F202 /* LXEreaMainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		495BD79F1E5F319500D3F202 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		495BD7A01E5F319500D3F202 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		495BD7A11E5F319500D3F202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7A21E5F319500D3F202 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		495BD7A21E5F319500D3F202 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		495BD7A41E5F319B00D3F202 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7A51E5F319C00D3F202 /* Controller */,
+				495BD7A81E5F319C00D3F202 /* Model */,
+				495BD7A91E5F319C00D3F202 /* Other */,
+				495BD7AA1E5F319C00D3F202 /* View */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		495BD7A51E5F319C00D3F202 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7A61E5F319C00D3F202 /* LXSceneMainController.h */,
+				495BD7A71E5F319C00D3F202 /* LXSceneMainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		495BD7A81E5F319C00D3F202 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		495BD7A91E5F319C00D3F202 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		495BD7AA1E5F319C00D3F202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7AB1E5F319C00D3F202 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		495BD7AB1E5F319C00D3F202 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		495BD7AD1E5F31A200D3F202 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7AE1E5F31A200D3F202 /* Controller */,
+				495BD7B11E5F31A200D3F202 /* Model */,
+				495BD7B21E5F31A200D3F202 /* Other */,
+				495BD7B31E5F31A200D3F202 /* View */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		495BD7AE1E5F31A200D3F202 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7AF1E5F31A200D3F202 /* LXDeviceMainController.h */,
+				495BD7B01E5F31A200D3F202 /* LXDeviceMainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		495BD7B11E5F31A200D3F202 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		495BD7B21E5F31A200D3F202 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		495BD7B31E5F31A200D3F202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495BD7B41E5F31A200D3F202 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		495BD7B41E5F31A200D3F202 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9B961E7F28E3819D738F4A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F86315581BE7B736A1F357E5 /* Pods-ZhengTaiCSRMeshLamp.debug.xcconfig */,
+				0868644104529C09B927215F /* Pods-ZhengTaiCSRMeshLamp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E78AA0AD2DFAC1AA880B2A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7404FDFB6CFF0A415F14966 /* libPods-ZhengTaiCSRMeshLamp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		495BD5971E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495BD5C51E5F1DAE00D3F202 /* Build configuration list for PBXNativeTarget "ZhengTaiCSRMeshLamp" */;
+			buildPhases = (
+				93E151443EADF6BFC8D1A620 /* [CP] Check Pods Manifest.lock */,
+				495BD5941E5F1DAD00D3F202 /* Sources */,
+				495BD5951E5F1DAD00D3F202 /* Frameworks */,
+				495BD5961E5F1DAD00D3F202 /* Resources */,
+				41C0832F8628247898FF2318 /* [CP] Embed Pods Frameworks */,
+				AF9E13E3EEA63159F73DD77A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZhengTaiCSRMeshLamp;
+			productName = ZhengTaiCSRMeshLamp;
+			productReference = 495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		495BD5B01E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495BD5C81E5F1DAE00D3F202 /* Build configuration list for PBXNativeTarget "ZhengTaiCSRMeshLampTests" */;
+			buildPhases = (
+				495BD5AD1E5F1DAE00D3F202 /* Sources */,
+				495BD5AE1E5F1DAE00D3F202 /* Frameworks */,
+				495BD5AF1E5F1DAE00D3F202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495BD5B31E5F1DAE00D3F202 /* PBXTargetDependency */,
+			);
+			name = ZhengTaiCSRMeshLampTests;
+			productName = ZhengTaiCSRMeshLampTests;
+			productReference = 495BD5B11E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		495BD5BB1E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495BD5CB1E5F1DAE00D3F202 /* Build configuration list for PBXNativeTarget "ZhengTaiCSRMeshLampUITests" */;
+			buildPhases = (
+				495BD5B81E5F1DAE00D3F202 /* Sources */,
+				495BD5B91E5F1DAE00D3F202 /* Frameworks */,
+				495BD5BA1E5F1DAE00D3F202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495BD5BE1E5F1DAE00D3F202 /* PBXTargetDependency */,
+			);
+			name = ZhengTaiCSRMeshLampUITests;
+			productName = ZhengTaiCSRMeshLampUITests;
+			productReference = 495BD5BC1E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		495BD5901E5F1DAD00D3F202 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = arrfu;
+				TargetAttributes = {
+					495BD5971E5F1DAD00D3F202 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AXTESR7SA4;
+						ProvisioningStyle = Automatic;
+					};
+					495BD5B01E5F1DAE00D3F202 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AXTESR7SA4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 495BD5971E5F1DAD00D3F202;
+					};
+					495BD5BB1E5F1DAE00D3F202 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AXTESR7SA4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 495BD5971E5F1DAD00D3F202;
+					};
+				};
+			};
+			buildConfigurationList = 495BD5931E5F1DAD00D3F202 /* Build configuration list for PBXProject "ZhengTaiCSRMeshLamp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 495BD58F1E5F1DAD00D3F202;
+			productRefGroup = 495BD5991E5F1DAD00D3F202 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				495BD5971E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp */,
+				495BD5B01E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests */,
+				495BD5BB1E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		495BD5961E5F1DAD00D3F202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495BD5AB1E5F1DAE00D3F202 /* LaunchScreen.storyboard in Resources */,
+				495BD5A81E5F1DAE00D3F202 /* Assets.xcassets in Resources */,
+				495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495BD5AF1E5F1DAE00D3F202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495BD5BA1E5F1DAE00D3F202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C0832F8628247898FF2318 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhengTaiCSRMeshLamp/Pods-ZhengTaiCSRMeshLamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E151443EADF6BFC8D1A620 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9E13E3EEA63159F73DD77A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhengTaiCSRMeshLamp/Pods-ZhengTaiCSRMeshLamp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		495BD5941E5F1DAD00D3F202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495BD7381E5F214E00D3F202 /* LXDelayBlockTimer.m in Sources */,
+				495BD73A1E5F214E00D3F202 /* LXRGBTools.m in Sources */,
+				495BD73F1E5F214E00D3F202 /* NSObject+ZXPUnicode.m in Sources */,
+				495BD7771E5F29C300D3F202 /* UIView+JFExtension.m in Sources */,
+				495BD73E1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.m in Sources */,
+				495BD72C1E5F214E00D3F202 /* Toast+UIView.m in Sources */,
+				495BD7291E5F214E00D3F202 /* MYDataViewController.m in Sources */,
+				495BD7A31E5F319500D3F202 /* LXEreaMainController.m in Sources */,
+				495BD7B51E5F31A200D3F202 /* LXDeviceMainController.m in Sources */,
+				495BD73D1E5F214E00D3F202 /* NSArray+ ZXPUnicode.m in Sources */,
+				495BD7221E5F214E00D3F202 /* LXNotifiCationObject.m in Sources */,
+				495BD7271E5F214E00D3F202 /* ZYWRootViewController.m in Sources */,
+				495BD7341E5F214E00D3F202 /* HYBNetworking.m in Sources */,
+				495BD7371E5F214E00D3F202 /* LXColorFilterTool.m in Sources */,
+				495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */,
+				495BD7251E5F214E00D3F202 /* ZYWSideView.m in Sources */,
+				495BD71D1E5F214E00D3F202 /* LXSecondBaseViewController.m in Sources */,
+				495BD7361E5F214E00D3F202 /* JFIntervalTimer.m in Sources */,
+				495BD72F1E5F214E00D3F202 /* UIButton+ImageTitleSpacing.m in Sources */,
+				495BD72D1E5F214E00D3F202 /* UIBarButtonItem+Extension.m in Sources */,
+				495BD72E1E5F214E00D3F202 /* UIButton+EnlargeEdge.m in Sources */,
+				495BD71B1E5F214E00D3F202 /* LXBaseViewController.m in Sources */,
+				495BD59D1E5F1DAE00D3F202 /* main.m in Sources */,
+				495BD7281E5F214E00D3F202 /* ZYWMessageViewController.m in Sources */,
+				495BD72A1E5F214E00D3F202 /* ZYWContainerViewController.m in Sources */,
+				495BD7241E5F214E00D3F202 /* ZYWSideTableView.m in Sources */,
+				495BD6801E5F1ECD00D3F202 /* AppDelegate.m in Sources */,
+				495BD71F1E5F214E00D3F202 /* LXDock.m in Sources */,
+				495BD71C1E5F214E00D3F202 /* LXNavigationController.m in Sources */,
+				495BD7201E5F214E00D3F202 /* LXDockController.m in Sources */,
+				495BD7211E5F214E00D3F202 /* LXDockItem.m in Sources */,
+				495BD73B1E5F214E00D3F202 /* LXTool.m in Sources */,
+				495BD7321E5F214E00D3F202 /* UIView+Extension.m in Sources */,
+				495BD7331E5F214E00D3F202 /* UIView+SHCZExt.m in Sources */,
+				495BD73C1E5F214E00D3F202 /* RGB-HSL.m in Sources */,
+				495BD7AC1E5F319C00D3F202 /* LXSceneMainController.m in Sources */,
+				495BD7231E5F214E00D3F202 /* ZYWContactViewController.m in Sources */,
+				495BD7311E5F214E00D3F202 /* UISlider+touch.m in Sources */,
+				495BD7261E5F214E00D3F202 /* LXGuideViewController.m in Sources */,
+				495BD7301E5F214E00D3F202 /* UIImage+FlatUI.m in Sources */,
+				495BD71E1E5F214E00D3F202 /* LXMainViewController.m in Sources */,
+				495BD7351E5F214E00D3F202 /* Reachability.m in Sources */,
+				495BD7391E5F214E00D3F202 /* LXLogTools.m in Sources */,
+				495BD7591E5F241B00D3F202 /* LXSettingMainController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495BD5AD1E5F1DAE00D3F202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495BD5B61E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495BD5B81E5F1DAE00D3F202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495BD5C11E5F1DAE00D3F202 /* ZhengTaiCSRMeshLampUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		495BD5B31E5F1DAE00D3F202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495BD5971E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp */;
+			targetProxy = 495BD5B21E5F1DAE00D3F202 /* PBXContainerItemProxy */;
+		};
+		495BD5BE1E5F1DAE00D3F202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495BD5971E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp */;
+			targetProxy = 495BD5BD1E5F1DAE00D3F202 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		495BD5A41E5F1DAE00D3F202 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495BD5A51E5F1DAE00D3F202 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		495BD5A91E5F1DAE00D3F202 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495BD5AA1E5F1DAE00D3F202 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		495BD5C31E5F1DAE00D3F202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		495BD5C41E5F1DAE00D3F202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		495BD5C61E5F1DAE00D3F202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86315581BE7B736A1F357E5 /* Pods-ZhengTaiCSRMeshLamp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = AXTESR7SA4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZhengTaiCSRMeshLamp/PrefixHeader.pch";
+				INFOPLIST_FILE = ZhengTaiCSRMeshLamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arrfu.app.ZhengTaiCSRMeshLamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		495BD5C71E5F1DAE00D3F202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0868644104529C09B927215F /* Pods-ZhengTaiCSRMeshLamp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = AXTESR7SA4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZhengTaiCSRMeshLamp/PrefixHeader.pch";
+				INFOPLIST_FILE = ZhengTaiCSRMeshLamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arrfu.app.ZhengTaiCSRMeshLamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		495BD5C91E5F1DAE00D3F202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AXTESR7SA4;
+				INFOPLIST_FILE = ZhengTaiCSRMeshLampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arrfu.app.ZhengTaiCSRMeshLampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZhengTaiCSRMeshLamp.app/ZhengTaiCSRMeshLamp";
+			};
+			name = Debug;
+		};
+		495BD5CA1E5F1DAE00D3F202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AXTESR7SA4;
+				INFOPLIST_FILE = ZhengTaiCSRMeshLampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arrfu.app.ZhengTaiCSRMeshLampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZhengTaiCSRMeshLamp.app/ZhengTaiCSRMeshLamp";
+			};
+			name = Release;
+		};
+		495BD5CC1E5F1DAE00D3F202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AXTESR7SA4;
+				INFOPLIST_FILE = ZhengTaiCSRMeshLampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arrfu.app.ZhengTaiCSRMeshLampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZhengTaiCSRMeshLamp;
+			};
+			name = Debug;
+		};
+		495BD5CD1E5F1DAE00D3F202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AXTESR7SA4;
+				INFOPLIST_FILE = ZhengTaiCSRMeshLampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arrfu.app.ZhengTaiCSRMeshLampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZhengTaiCSRMeshLamp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		495BD5931E5F1DAD00D3F202 /* Build configuration list for PBXProject "ZhengTaiCSRMeshLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495BD5C31E5F1DAE00D3F202 /* Debug */,
+				495BD5C41E5F1DAE00D3F202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495BD5C51E5F1DAE00D3F202 /* Build configuration list for PBXNativeTarget "ZhengTaiCSRMeshLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495BD5C61E5F1DAE00D3F202 /* Debug */,
+				495BD5C71E5F1DAE00D3F202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495BD5C81E5F1DAE00D3F202 /* Build configuration list for PBXNativeTarget "ZhengTaiCSRMeshLampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495BD5C91E5F1DAE00D3F202 /* Debug */,
+				495BD5CA1E5F1DAE00D3F202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495BD5CB1E5F1DAE00D3F202 /* Build configuration list for PBXNativeTarget "ZhengTaiCSRMeshLampUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495BD5CC1E5F1DAE00D3F202 /* Debug */,
+				495BD5CD1E5F1DAE00D3F202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 495BD5901E5F1DAD00D3F202 /* Project object */;
+}
