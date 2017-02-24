@@ -56,6 +56,7 @@
 		495BD7A31E5F319500D3F202 /* LXEreaMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD79E1E5F319500D3F202 /* LXEreaMainController.m */; };
 		495BD7AC1E5F319C00D3F202 /* LXSceneMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD7A71E5F319C00D3F202 /* LXSceneMainController.m */; };
 		495BD7B51E5F31A200D3F202 /* LXDeviceMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD7B01E5F31A200D3F202 /* LXDeviceMainController.m */; };
+		495BD7C21E5FE46200D3F202 /* LXLampCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD7C11E5FE46200D3F202 /* LXLampCircleView.m */; };
 		B04E370255B712A3D455D556 /* libPods-ZhengTaiCSRMeshLamp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7404FDFB6CFF0A415F14966 /* libPods-ZhengTaiCSRMeshLamp.a */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +180,8 @@
 		495BD7A71E5F319C00D3F202 /* LXSceneMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSceneMainController.m; sourceTree = "<group>"; };
 		495BD7AF1E5F31A200D3F202 /* LXDeviceMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDeviceMainController.h; sourceTree = "<group>"; };
 		495BD7B01E5F31A200D3F202 /* LXDeviceMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDeviceMainController.m; sourceTree = "<group>"; };
+		495BD7C01E5FE46200D3F202 /* LXLampCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLampCircleView.h; sourceTree = "<group>"; };
+		495BD7C11E5FE46200D3F202 /* LXLampCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLampCircleView.m; sourceTree = "<group>"; };
 		D7404FDFB6CFF0A415F14966 /* libPods-ZhengTaiCSRMeshLamp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhengTaiCSRMeshLamp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F86315581BE7B736A1F357E5 /* Pods-ZhengTaiCSRMeshLamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhengTaiCSRMeshLamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhengTaiCSRMeshLamp/Pods-ZhengTaiCSRMeshLamp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -691,6 +694,8 @@
 			isa = PBXGroup;
 			children = (
 				495BD7B41E5F31A200D3F202 /* Cell */,
+				495BD7C01E5FE46200D3F202 /* LXLampCircleView.h */,
+				495BD7C11E5FE46200D3F202 /* LXLampCircleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -917,6 +922,7 @@
 				495BD7B51E5F31A200D3F202 /* LXDeviceMainController.m in Sources */,
 				495BD73D1E5F214E00D3F202 /* NSArray+ ZXPUnicode.m in Sources */,
 				495BD7221E5F214E00D3F202 /* LXNotifiCationObject.m in Sources */,
+				495BD7C21E5FE46200D3F202 /* LXLampCircleView.m in Sources */,
 				495BD7271E5F214E00D3F202 /* ZYWRootViewController.m in Sources */,
 				495BD7341E5F214E00D3F202 /* HYBNetworking.m in Sources */,
 				495BD7371E5F214E00D3F202 /* LXColorFilterTool.m in Sources */,

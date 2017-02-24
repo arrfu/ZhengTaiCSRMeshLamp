@@ -7,8 +7,11 @@
 //
 
 #import "LXDeviceMainController.h"
+#import "LXLampCircleView.h"
 
-@interface LXDeviceMainController ()
+@interface LXDeviceMainController (){
+    LXLampCircleView * _lampCircleView;
+}
 
 @end
 
@@ -21,6 +24,8 @@
     self.title = LXLocalizedString(@"设备中心");
     self.navLeftButton.image = nil;
     self.navRightButton.image = nil;
+    
+    [self addKnobUI];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,14 +33,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ * 添加滑块
+ */
+-(void)addKnobUI{
+    
+    UIImage * image = [UIImage alloc];
+    image = [UIImage imageNamed:@"Control-dmg-Pointer"];
+    
+     _lampCircleView = [[LXLampCircleView alloc] initWithFrame: CGRectMake(50, 50, 240, 240)];
+    
+//    _lampCircleView.delegate = self;
+    [self.view addSubview:_lampCircleView];
+//    [_lampCircleView switchLampCircleWithType:LXColorStyleColorFull];
+    [_lampCircleView switchLampCircleWithType:LXColorStyleWarmAndWhite];
+    
+ 
 }
-*/
-
 @end
