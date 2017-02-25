@@ -38,18 +38,9 @@
     
 
 
-
-    // 添加下拉框
-    [self addDownSelectView];
+    // 创建界面
+    [self createUI];
     
-    // 添加色盘
-    [self addLampCircleView];
-
-    // 添加调色 调光 按钮
-    [self addColorAndWhiteButton];
-    
-    // 创建开关按钮
-    [self createPowerSwitchButton];
     
 }
 
@@ -58,6 +49,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ * 创建界面
+ */
+-(void)createUI{
+    // 添加下拉框
+    [self addDownSelectView];
+    
+    // 添加色盘
+    [self addLampCircleView];
+    
+    // 添加调色 调光 按钮
+    [self addColorAndWhiteButton];
+    
+    // 创建开关按钮
+    [self createPowerSwitchButton];
+}
+
+#pragma mark - 下拉框选项
 -(void)comboBoxView:(XJComboBoxView *)comboBoxView didSelectRowAtValueMember:(NSString *)valueMember displayMember:(NSString *)displayMember{
     NSLog(@"valueMember = %@, displayMember=%@", valueMember, displayMember);
 }
@@ -135,7 +144,8 @@
         
         NSString *titleStr = i==0? @"调色 " : @"调光";
         [btn setTitle:titleStr forState:UIControlStateNormal];
-        btn.titleLabel.textColor = secMainTextColor;
+//        btn.titleLabel.textColor = secMainTextColor;
+        [btn setTitleColor:LXColor(46, 46, 46) forState:UIControlStateNormal];
         btn.backgroundColor = [UIColor blackColor];
 //        btn.backgroundColor = [UIColor darkGrayColor];
         
@@ -144,7 +154,7 @@
         }
         else{
             whiteButton = btn;
-            btn.backgroundColor = [UIColor darkGrayColor];
+            
         }
         
         [btn addTarget:self action:@selector(colorAndWhiteButtonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -152,6 +162,7 @@
         
     }
     
+    [self updateColorAndWhiteButtonWithType:currentLampType];
 }
 
 /**
@@ -245,12 +256,18 @@
 -(void)updateColorAndWhiteButtonWithType:(LXColorStyle)type{
     
     if (type == LXColorStyleColorFull) {
-        colorButton.backgroundColor = [UIColor blackColor];
-        whiteButton.backgroundColor = [UIColor darkGrayColor];
+        
+        colorButton.backgroundColor = LXColor(32, 32, 32);
+        [colorButton setTitleColor:LXColor(101, 101, 101) forState:UIControlStateNormal];
+        whiteButton.backgroundColor = LXColor(46, 46, 46);
+        [whiteButton setTitleColor:LXColor(74, 74, 74) forState:UIControlStateNormal];
     }
     else{
-        colorButton.backgroundColor = [UIColor darkGrayColor];
-        whiteButton.backgroundColor = [UIColor blackColor];
+        
+        colorButton.backgroundColor = LXColor(46, 46, 46);
+        [colorButton setTitleColor:LXColor(74, 74, 74) forState:UIControlStateNormal];
+        whiteButton.backgroundColor = LXColor(32, 32, 32);
+        [whiteButton setTitleColor:LXColor(101, 101, 101) forState:UIControlStateNormal];
     }
 }
 

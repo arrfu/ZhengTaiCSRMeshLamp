@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = LXColor(40,40,40);
+    
+    self.title = self.title!=nil? self.title : LXLocalizedString(@"窗帘");
+    self.navRightButton.image = nil;
+    
+    // 创建界面
+    [self createUI];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +32,53 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ * 创建界面
+ */
+-(void)createUI{
+    
+    UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kNavHeight)];
+    //    bgImageView.image = [UIImage imageNamed:@"img_lamp_plate_outer_ring"];
+    //    bgImageView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:bgImageView];
+    
+    // 创建开关按钮
+    [self createPowerSwitchButton];
+    
 }
-*/
+
+/**
+ * 创建开关按钮
+ */
+-(void)createPowerSwitchButton{
+    
+    CGFloat btnW = 130;
+    CGFloat btnX = 0;
+    CGFloat btnH = 54;
+    CGFloat btnY = kContentHeight-btnH-15;
+    
+    UIButton *btn =  [[UIButton alloc] initWithFrame:CGRectMake(btnX, btnY, btnW, btnH)];
+    btn.jf_centerX = kScreenWidth*0.5;
+    btn.tag = 103;
+    
+    
+    [btn setImage:[UIImage imageNamed:@"Device-switch-on"] forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"Device-switch-off"] forState:UIControlStateSelected];
+    //        [btn setImage:[UIImage imageNamed:@"Device-rotatio-left"] forState:UIControlStateHighlighted];
+    
+    
+    [btn addTarget:self action:@selector(powerSwitchButtonnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+}
+
+
+#pragma mark - 开关灯
+
+-(void)powerSwitchButtonnClick:(UIButton*)sender{
+    LXLog(@"%d",sender.tag);
+    sender.selected = !sender.selected;
+}
+
 
 @end

@@ -80,7 +80,7 @@
     titleLabel.text = @"客厅大厅";
     titleLabel.textAlignment = NSTextAlignmentLeft;
     titleLabel.font = mainFontSize(19);
-    titleLabel.textColor = mainTextColor;
+    titleLabel.textColor = kTextColorC1;
     [bgView addSubview:titleLabel];
     
     
@@ -115,6 +115,11 @@
 
 }
 
+-(void)setImageStr:(NSString *)imageStr{
+    _imageStr = imageStr;
+    [editButton setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
+    [editButton setImage:[UIImage imageNamed:imageStr] forState:UIControlStateSelected];
+}
 
 
 

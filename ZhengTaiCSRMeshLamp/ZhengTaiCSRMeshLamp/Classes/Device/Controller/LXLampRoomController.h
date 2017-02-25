@@ -10,4 +10,6 @@
 
 @interface LXLampRoomController : LXSecondBaseViewController
 
+@property(nonatomic,copy)NSString *title;
+
 @end

@@ -13,6 +13,12 @@
 		492E8D891E617BD000ED6321 /* UpAccessory.png in Resources */ = {isa = PBXBuildFile; fileRef = 492E8D831E617BD000ED6321 /* UpAccessory.png */; };
 		492E8D8A1E617BD000ED6321 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D851E617BD000ED6321 /* UIView+ITTAdditions.m */; };
 		492E8D8B1E617BD000ED6321 /* XJComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D871E617BD000ED6321 /* XJComboBoxView.m */; };
+		492E8D8E1E61907200ED6321 /* LXLampRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D8D1E61907200ED6321 /* LXLampRoomController.m */; };
+		492E8D911E61A41C00ED6321 /* LXCurtainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D901E61A41C00ED6321 /* LXCurtainController.m */; };
+		492E8D941E61A43C00ED6321 /* LXSensorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D931E61A43C00ED6321 /* LXSensorController.m */; };
+		492E8D971E61A47C00ED6321 /* LXSocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D961E61A47C00ED6321 /* LXSocketController.m */; };
+		492E8D9A1E61A4A500ED6321 /* LXSwitchSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D991E61A4A500ED6321 /* LXSwitchSceneController.m */; };
+		492E8D9D1E61A4EA00ED6321 /* LXSwitchGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D9C1E61A4EA00ED6321 /* LXSwitchGroupController.m */; };
 		495BD59D1E5F1DAE00D3F202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD59C1E5F1DAE00D3F202 /* main.m */; };
 		495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5A21E5F1DAE00D3F202 /* ViewController.m */; };
 		495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A41E5F1DAE00D3F202 /* Main.storyboard */; };
@@ -95,6 +101,18 @@
 		492E8D851E617BD000ED6321 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
 		492E8D861E617BD000ED6321 /* XJComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJComboBoxView.h; sourceTree = "<group>"; };
 		492E8D871E617BD000ED6321 /* XJComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJComboBoxView.m; sourceTree = "<group>"; };
+		492E8D8C1E61907200ED6321 /* LXLampRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLampRoomController.h; sourceTree = "<group>"; };
+		492E8D8D1E61907200ED6321 /* LXLampRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLampRoomController.m; sourceTree = "<group>"; };
+		492E8D8F1E61A41C00ED6321 /* LXCurtainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCurtainController.h; sourceTree = "<group>"; };
+		492E8D901E61A41C00ED6321 /* LXCurtainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCurtainController.m; sourceTree = "<group>"; };
+		492E8D921E61A43C00ED6321 /* LXSensorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSensorController.h; sourceTree = "<group>"; };
+		492E8D931E61A43C00ED6321 /* LXSensorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSensorController.m; sourceTree = "<group>"; };
+		492E8D951E61A47C00ED6321 /* LXSocketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSocketController.h; sourceTree = "<group>"; };
+		492E8D961E61A47C00ED6321 /* LXSocketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSocketController.m; sourceTree = "<group>"; };
+		492E8D981E61A4A500ED6321 /* LXSwitchSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSwitchSceneController.h; sourceTree = "<group>"; };
+		492E8D991E61A4A500ED6321 /* LXSwitchSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSwitchSceneController.m; sourceTree = "<group>"; };
+		492E8D9B1E61A4EA00ED6321 /* LXSwitchGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSwitchGroupController.h; sourceTree = "<group>"; };
+		492E8D9C1E61A4EA00ED6321 /* LXSwitchGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSwitchGroupController.m; sourceTree = "<group>"; };
 		495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhengTaiCSRMeshLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BD59C1E5F1DAE00D3F202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		495BD59E1E5F1DAE00D3F202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -711,6 +729,18 @@
 				495BD7B01E5F31A200D3F202 /* LXDeviceMainController.m */,
 				492E8D761E616D2500ED6321 /* LXLampColorSettingController.h */,
 				492E8D771E616D2500ED6321 /* LXLampColorSettingController.m */,
+				492E8D8C1E61907200ED6321 /* LXLampRoomController.h */,
+				492E8D8D1E61907200ED6321 /* LXLampRoomController.m */,
+				492E8D8F1E61A41C00ED6321 /* LXCurtainController.h */,
+				492E8D901E61A41C00ED6321 /* LXCurtainController.m */,
+				492E8D921E61A43C00ED6321 /* LXSensorController.h */,
+				492E8D931E61A43C00ED6321 /* LXSensorController.m */,
+				492E8D951E61A47C00ED6321 /* LXSocketController.h */,
+				492E8D961E61A47C00ED6321 /* LXSocketController.m */,
+				492E8D981E61A4A500ED6321 /* LXSwitchSceneController.h */,
+				492E8D991E61A4A500ED6321 /* LXSwitchSceneController.m */,
+				492E8D9B1E61A4EA00ED6321 /* LXSwitchGroupController.h */,
+				492E8D9C1E61A4EA00ED6321 /* LXSwitchGroupController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -972,7 +1002,9 @@
 				495BD7371E5F214E00D3F202 /* LXColorFilterTool.m in Sources */,
 				495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */,
 				495BD7251E5F214E00D3F202 /* ZYWSideView.m in Sources */,
+				492E8D941E61A43C00ED6321 /* LXSensorController.m in Sources */,
 				495BD71D1E5F214E00D3F202 /* LXSecondBaseViewController.m in Sources */,
+				492E8D8E1E61907200ED6321 /* LXLampRoomController.m in Sources */,
 				495BD7361E5F214E00D3F202 /* JFIntervalTimer.m in Sources */,
 				495BD72F1E5F214E00D3F202 /* UIButton+ImageTitleSpacing.m in Sources */,
 				495BD72D1E5F214E00D3F202 /* UIBarButtonItem+Extension.m in Sources */,
@@ -981,11 +1013,13 @@
 				495BD59D1E5F1DAE00D3F202 /* main.m in Sources */,
 				495BD7281E5F214E00D3F202 /* ZYWMessageViewController.m in Sources */,
 				492E8D8B1E617BD000ED6321 /* XJComboBoxView.m in Sources */,
+				492E8D911E61A41C00ED6321 /* LXCurtainController.m in Sources */,
 				492E8D781E616D2500ED6321 /* LXLampColorSettingController.m in Sources */,
 				495BD72A1E5F214E00D3F202 /* ZYWContainerViewController.m in Sources */,
 				495BD7241E5F214E00D3F202 /* ZYWSideTableView.m in Sources */,
 				495BD6801E5F1ECD00D3F202 /* AppDelegate.m in Sources */,
 				495BD71F1E5F214E00D3F202 /* LXDock.m in Sources */,
+				492E8D9A1E61A4A500ED6321 /* LXSwitchSceneController.m in Sources */,
 				495BD71C1E5F214E00D3F202 /* LXNavigationController.m in Sources */,
 				495BD7201E5F214E00D3F202 /* LXDockController.m in Sources */,
 				495BD7211E5F214E00D3F202 /* LXDockItem.m in Sources */,
@@ -995,9 +1029,11 @@
 				495BD73C1E5F214E00D3F202 /* RGB-HSL.m in Sources */,
 				495BD7AC1E5F319C00D3F202 /* LXSceneMainController.m in Sources */,
 				495BD7231E5F214E00D3F202 /* ZYWContactViewController.m in Sources */,
+				492E8D9D1E61A4EA00ED6321 /* LXSwitchGroupController.m in Sources */,
 				495BD7311E5F214E00D3F202 /* UISlider+touch.m in Sources */,
 				495BD7261E5F214E00D3F202 /* LXGuideViewController.m in Sources */,
 				495BD7301E5F214E00D3F202 /* UIImage+FlatUI.m in Sources */,
+				492E8D971E61A47C00ED6321 /* LXSocketController.m in Sources */,
 				495BD71E1E5F214E00D3F202 /* LXMainViewController.m in Sources */,
 				495BD7351E5F214E00D3F202 /* Reachability.m in Sources */,
 				495BD7391E5F214E00D3F202 /* LXLogTools.m in Sources */,

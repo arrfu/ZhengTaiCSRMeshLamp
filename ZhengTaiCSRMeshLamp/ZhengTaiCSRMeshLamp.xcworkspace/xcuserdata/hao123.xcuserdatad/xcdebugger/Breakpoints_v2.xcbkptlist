@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhengTaiCSRMeshLamp/Classes/Device/Controller/LXLampColorSettingController.m"
-            timestampString = "509709446.76385"
+            timestampString = "509718409.143081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "-colorAndWhiteButtonClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhengTaiCSRMeshLamp/Classes/Device/Controller/LXLampColorSettingController.m"
-            timestampString = "509709446.76385"
+            timestampString = "509718409.143081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "-updateColorAndWhiteButtonWithType:"
             landmarkType = "7">
          </BreakpointContent>
