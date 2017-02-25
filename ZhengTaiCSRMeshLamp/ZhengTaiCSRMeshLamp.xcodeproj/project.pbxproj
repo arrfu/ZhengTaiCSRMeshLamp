@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492E8D6C1E61366200ED6321 /* LXDeviceTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D6B1E61366200ED6321 /* LXDeviceTableCell.m */; };
+		492E8D781E616D2500ED6321 /* LXLampColorSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D771E616D2500ED6321 /* LXLampColorSettingController.m */; };
+		492E8D881E617BD000ED6321 /* DownAccessory.png in Resources */ = {isa = PBXBuildFile; fileRef = 492E8D821E617BD000ED6321 /* DownAccessory.png */; };
+		492E8D891E617BD000ED6321 /* UpAccessory.png in Resources */ = {isa = PBXBuildFile; fileRef = 492E8D831E617BD000ED6321 /* UpAccessory.png */; };
+		492E8D8A1E617BD000ED6321 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D851E617BD000ED6321 /* UIView+ITTAdditions.m */; };
+		492E8D8B1E617BD000ED6321 /* XJComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D871E617BD000ED6321 /* XJComboBoxView.m */; };
 		495BD59D1E5F1DAE00D3F202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD59C1E5F1DAE00D3F202 /* main.m */; };
 		495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5A21E5F1DAE00D3F202 /* ViewController.m */; };
 		495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A41E5F1DAE00D3F202 /* Main.storyboard */; };
@@ -79,6 +85,16 @@
 
 /* Begin PBXFileReference section */
 		0868644104529C09B927215F /* Pods-ZhengTaiCSRMeshLamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhengTaiCSRMeshLamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhengTaiCSRMeshLamp/Pods-ZhengTaiCSRMeshLamp.release.xcconfig"; sourceTree = "<group>"; };
+		492E8D6A1E61366200ED6321 /* LXDeviceTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDeviceTableCell.h; sourceTree = "<group>"; };
+		492E8D6B1E61366200ED6321 /* LXDeviceTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDeviceTableCell.m; sourceTree = "<group>"; };
+		492E8D761E616D2500ED6321 /* LXLampColorSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLampColorSettingController.h; sourceTree = "<group>"; };
+		492E8D771E616D2500ED6321 /* LXLampColorSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLampColorSettingController.m; sourceTree = "<group>"; };
+		492E8D821E617BD000ED6321 /* DownAccessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownAccessory.png; sourceTree = "<group>"; };
+		492E8D831E617BD000ED6321 /* UpAccessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpAccessory.png; sourceTree = "<group>"; };
+		492E8D841E617BD000ED6321 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
+		492E8D851E617BD000ED6321 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
+		492E8D861E617BD000ED6321 /* XJComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJComboBoxView.h; sourceTree = "<group>"; };
+		492E8D871E617BD000ED6321 /* XJComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJComboBoxView.m; sourceTree = "<group>"; };
 		495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhengTaiCSRMeshLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BD59C1E5F1DAE00D3F202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		495BD59E1E5F1DAE00D3F202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -212,6 +228,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		492E8D801E617BD000ED6321 /* XJComboBox */ = {
+			isa = PBXGroup;
+			children = (
+				492E8D811E617BD000ED6321 /* images */,
+				492E8D841E617BD000ED6321 /* UIView+ITTAdditions.h */,
+				492E8D851E617BD000ED6321 /* UIView+ITTAdditions.m */,
+				492E8D861E617BD000ED6321 /* XJComboBoxView.h */,
+				492E8D871E617BD000ED6321 /* XJComboBoxView.m */,
+			);
+			path = XJComboBox;
+			sourceTree = "<group>";
+		};
+		492E8D811E617BD000ED6321 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				492E8D821E617BD000ED6321 /* DownAccessory.png */,
+				492E8D831E617BD000ED6321 /* UpAccessory.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		495BD58F1E5F1DAD00D3F202 = {
 			isa = PBXGroup;
 			children = (
@@ -672,6 +709,8 @@
 			children = (
 				495BD7AF1E5F31A200D3F202 /* LXDeviceMainController.h */,
 				495BD7B01E5F31A200D3F202 /* LXDeviceMainController.m */,
+				492E8D761E616D2500ED6321 /* LXLampColorSettingController.h */,
+				492E8D771E616D2500ED6321 /* LXLampColorSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -693,6 +732,7 @@
 		495BD7B31E5F31A200D3F202 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				492E8D801E617BD000ED6321 /* XJComboBox */,
 				495BD7B41E5F31A200D3F202 /* Cell */,
 				495BD7C01E5FE46200D3F202 /* LXLampCircleView.h */,
 				495BD7C11E5FE46200D3F202 /* LXLampCircleView.m */,
@@ -703,6 +743,8 @@
 		495BD7B41E5F31A200D3F202 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				492E8D6A1E61366200ED6321 /* LXDeviceTableCell.h */,
+				492E8D6B1E61366200ED6321 /* LXDeviceTableCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -836,8 +878,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492E8D881E617BD000ED6321 /* DownAccessory.png in Resources */,
 				495BD5AB1E5F1DAE00D3F202 /* LaunchScreen.storyboard in Resources */,
 				495BD5A81E5F1DAE00D3F202 /* Assets.xcassets in Resources */,
+				492E8D891E617BD000ED6321 /* UpAccessory.png in Resources */,
 				495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -936,6 +980,8 @@
 				495BD71B1E5F214E00D3F202 /* LXBaseViewController.m in Sources */,
 				495BD59D1E5F1DAE00D3F202 /* main.m in Sources */,
 				495BD7281E5F214E00D3F202 /* ZYWMessageViewController.m in Sources */,
+				492E8D8B1E617BD000ED6321 /* XJComboBoxView.m in Sources */,
+				492E8D781E616D2500ED6321 /* LXLampColorSettingController.m in Sources */,
 				495BD72A1E5F214E00D3F202 /* ZYWContainerViewController.m in Sources */,
 				495BD7241E5F214E00D3F202 /* ZYWSideTableView.m in Sources */,
 				495BD6801E5F1ECD00D3F202 /* AppDelegate.m in Sources */,
@@ -955,6 +1001,8 @@
 				495BD71E1E5F214E00D3F202 /* LXMainViewController.m in Sources */,
 				495BD7351E5F214E00D3F202 /* Reachability.m in Sources */,
 				495BD7391E5F214E00D3F202 /* LXLogTools.m in Sources */,
+				492E8D6C1E61366200ED6321 /* LXDeviceTableCell.m in Sources */,
+				492E8D8A1E617BD000ED6321 /* UIView+ITTAdditions.m in Sources */,
 				495BD7591E5F241B00D3F202 /* LXSettingMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,8 +6,9 @@
 //  Copyright © 2017年 arrfu. All rights reserved.
 //
 
-#import "LXBaseViewController.h"
+//#import "LXBaseViewController.h"
+#import "LXSecondBaseViewController.h"
 
-@interface LXDeviceMainController : LXBaseViewController
+@interface LXDeviceMainController : LXSecondBaseViewController
 
 @end

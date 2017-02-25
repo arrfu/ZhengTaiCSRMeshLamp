@@ -42,15 +42,38 @@
 #define kNotiOpentheSidebar @"kNotiOpentheSidebar"
 
 
-#define kScreenWidth [UIScreen mainScreen].applicationFrame.size.width
-#define kScreenHeight [UIScreen mainScreen].applicationFrame.size.height
-#define kIsIpad (kScreenHeight == 460)
+///
+#define kStatusBarHeight 20
+#define kNavHeight 64  // 44+kStatusBarHeight
+#define kDockHeight  49
 
-#define kNavHeight 64
-#define kDockHeight 49
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+// 除去状态栏，导航栏，底部菜单栏的有效高度
+#define kContentHeight (kScreenHeight-kDockHeight-kNavHeight)
+
+// 适配机型 (width=320,height=480)
+#define kIsIpad (kScreenHeight == 480)
+
+// 适配机型
+#define Is4S ([UIScreen mainScreen].bounds.size.height == 480)
+
+// 高度适配参数
+// iphone4/4s 480 iphone5 568  iphone6 667  iphone6Plus 736
+#define kScaleH (kScreenHeight==667? 1:(kScreenHeight==736? 1.137557:(kScreenHeight==480? 0.71964:0.84698)))
+
+// 宽度适配参数
+// iphone4/4s 320 iphone5 320  iphone6 375  iphone6Plus 414
+#define kScaleW (kScreenWidth==375? 1:(kScreenWidth==414? 1.04:0.853333))
 
 //4.获取颜色
 #define LXColor(r,g,b) ([UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1])
+
+
+
+///
 
 
 //Cell 的背景色
@@ -61,8 +84,10 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 // 主文本颜色
-#define mainTextColor       [UIColor colorWithWhite:1.0 alpha:0.75] // 灰白色
+#define mainTextColor       [UIColor blackColor] // 灰白色
 #define mainTextColorSelect LXColor(255,112,0) // 橙色
+
+#define secMainTextColor LXColor(82,82,82) // 灰色
 
 // 分割线颜色 淡灰色
 //#define mainLineColor LXColor(0xd9,0xdf,0xe8) // C2
@@ -129,13 +154,7 @@
 
 #define kHeadPhoneOut @"kHeadPhoneOut"
 
-// 适配机型
-#define Is4S ([UIScreen mainScreen].bounds.size.height == 480)
 
-// 高度适配参数
-// iphone5 548  iphone6 647  iphone6Plus 736
-//#define kScaleH (kScreenHeight==647? 1.17429:(kScreenHeight==736? 1.29577:1))
-#define kScaleH (kScreenHeight==647? 1:(kScreenHeight==736? 1.137557:0.84698))
 
 #define kCardPlugChangeState               @"kCardPlugChangeState"
 #define kUHostPlugChangeState              @"kUHostPlugChangeState"
@@ -146,28 +165,6 @@
 
 #define kForelanch                         @"kForelanch"
 
-//#define kCustomColorH   LXColor(120, 127, 140)
-
-// 保存组地址信息
-#define kLXGroupAddressDictArray @"kLXGroupAddressDictArray"
-
-// 保存快捷颜色
-#define kLXSaveColorInfo @"kLXSaveColorInfo"
-
-// 明亮
-#define kLXFasterColorBrightnessH UIColorFromRGB(0xf9f9f9)
-// 柔和
-#define kLXFasterColorBrightnessM UIColorFromRGB(0xced3d6)
-// 微亮
-#define kLXFasterColorBrightnessL UIColorFromRGB(0x8f9497)
-
-
-//// 明亮
-//#define kLXFasterColorBrightnessH [UIColor colorWithRed:252/255.0 green:252/255.0 blue:252/255.0 alpha:1.0]
-//// 柔和
-//#define kLXFasterColorBrightnessM [UIColor colorWithRed:245/255.0 green:206/255.0 blue:89/255.0 alpha:1.0]
-//// 微亮
-//#define kLXFasterColorBrightnessL mainTextColor
 
 
 // int转10进制字符串
