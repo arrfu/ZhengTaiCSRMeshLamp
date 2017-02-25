@@ -23,6 +23,7 @@
     UIButton *sliderBtn; // 滑动块
     
     LXColorStyle lampColorStyle; // 灯模式 0:彩灯 1：白灯
+    LXGestureState gestureState; // 手势状态
 }
 
 @end
@@ -119,10 +120,10 @@
     
     // 手势处理
     if (([panGesture state] == UIGestureRecognizerStateBegan) || ([panGesture state] == UIGestureRecognizerStateChanged)) {
-//        gestureState = LXGestureStateBegan;
+        gestureState = LXGestureStateBegan;
     }
     else  {
-//        gestureState = LXGestureStateEnd;
+        gestureState = LXGestureStateEnd;
     }
     
     [self moveSliderThumWithAngle:[self mapPointToCirclePoint:touchpoint]];
@@ -149,7 +150,7 @@
     if (point.y > center.y)
         angle = 2.0 * M_PI - angle;
     
-        LXLog(@"angle = %f",angle);
+//        LXLog(@"angle = %f",angle);
     
     return angle;
 }
@@ -186,7 +187,7 @@
     
     // 获取对应位置的颜色
 //    int degree = lampColorStyle == LXColorStyleColorFull? colorLampDegree:whiteLampDegree;
-//    [self mapColorWithAngle:angle andBrightness:degree];
+    [self mapColorWithAngle:angle andBrightness:100];
 }
 
 /**
@@ -223,6 +224,106 @@
         colorImageView.image = [UIImage imageNamed:@"Control-dmg-bacolor"];
     }
 }
+
+#pragma mark - 滑动取色
+
+/**
+ * 将角度和亮度转化为RGB
+ */
+-(UIColor*)mapColorWithAngle:(double)angle andBrightness:(CGFloat)brightness{
+    
+    UIColor *color;
+    
+    if (lampColorStyle == LXColorStyleColorFull) {
+        // 彩灯
+        color = [self colorLampFormAngle:angle andBrightness:brightness];
+        
+    }
+    else{
+        // 白灯
+        
+        color = [self whiteLampFormAngle:angle andBrightness:brightness];
+        
+    }
+    
+
+    
+    if ([self.delegate respondsToSelector:@selector(scrollColorAndWhiteLampColor:colorStyle:GestureState:)]) {
+        [self.delegate scrollColorAndWhiteLampColor:color colorStyle:lampColorStyle GestureState:gestureState];
+    }
+    
+//        bgImageView.backgroundColor = color;
+    
+//        LXLog(@"color = %@",color);
+    
+    return color;
+}
+
+/**
+ * 根据角度转换为彩灯颜色
+ */
+-(UIColor*)colorLampFormAngle:(double)angle andBrightness:(CGFloat)brightness{
+    
+    //    brightness = brightness<=1? 1:brightness;
+    
+    float sat = brightness/100.0f;
+    float hue = angle / (2 * M_PI);
+    float ver = brightness/100.0f;
+    
+    //     UIColor *color =  [UIColor colorWithHue:hue saturation:1.0f brightness:1.0f alpha:1.0f];
+    
+    UIColor *color =  [UIColor colorWithHue:hue saturation:1.0f brightness:ver alpha:1.0f];
+    
+    
+    
+    return color;
+}
+
+/**
+ * 根据角度转换为白灯颜色
+ */
+-(UIColor*)whiteLampFormAngle:(double)angle andBrightness:(CGFloat)brightness{
+    
+    UIColor *color = [UIColor whiteColor];
+    
+    angle = [self transformToFanAngle:angle];
+    
+    CGFloat value = angle / k_TotalAngle; // 获得
+    
+    value = 1-value;
+    color = [UIColor colorWithRed:value green:0 blue:0 alpha:0];
+    
+    //    LXLog(@"color == %@",color);
+    //    LXLog(@"brfore angle == %f",angle);
+    //
+    //    LXLog(@"after angle == %f",[self angleFromWhiteLampColor:color]);
+    return color;
+}
+
+/**
+ * 将标准圆角度转换成扇形起始角度
+ */
+-(double)transformToFanAngle:(double)angle{
+    
+    CGFloat leftMinAngle = k_LeftMinAngle;
+    CGFloat rightMinAngle = k_RightMinAngle;
+    //    CGFloat totalAngle = 2.0 * M_PI - (rightMinAngle-leftMinAngle);
+    
+    if (angle >= rightMinAngle && angle <=2.0 * M_PI) {
+        angle = angle-rightMinAngle;
+    }
+    else if (angle <= leftMinAngle){
+        angle += (2.0 * M_PI - rightMinAngle);
+    }
+    else{
+        angle = 0;
+    }
+    
+    //    LXLog(@"angle == %f",angle);
+    
+    return angle;
+}
+
 
 
 @end
