@@ -7,6 +7,7 @@
 //
 
 #import "LXSocketController.h"
+#import "LXSocketClockController.h"
 
 @interface LXSocketController (){
     UIImageView *bgImageView;
@@ -189,6 +190,9 @@
 -(void)clockButtonnClick:(UIButton*)sender{
     LXLog(@"%d",sender.tag);
 //    sender.selected = !sender.selected;
+    
+    LXSocketClockController *vc = [[LXSocketClockController alloc] init];
+    [self.navigationController pushViewController: vc animated:YES];
 }
 
 

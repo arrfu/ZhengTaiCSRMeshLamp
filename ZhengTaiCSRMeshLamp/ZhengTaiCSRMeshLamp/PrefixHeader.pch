@@ -84,13 +84,17 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 // 主文本颜色
-#define mainTextColor       [UIColor blackColor] // 灰白色
+#define mainTextColor       [UIColor blackColor] // 黑色
 #define mainTextColorSelect LXColor(101, 101, 101) // 深灰色
 
 #define secMainTextColor LXColor(82,82,82) // 灰色
 
-#define kTextColorC1 LXColor(122,123,124) // 黑色字体
+#define kTextColorC1 LXColor(122,123,124) // 深黑色字体
 #define kTextColorC2 LXColor(141,142,143) // 淡黑 色字体
+
+// cell nav等颜色
+#define kCellColorC1 LXColor(72, 114, 228) // 蓝色
+#define kCellColorC2 LXColor(228, 47, 51) // 红色
 
 // 分割线颜色 淡灰色
 //#define mainLineColor LXColor(0xd9,0xdf,0xe8) //
@@ -106,7 +110,7 @@
 
 // 主字体
 //#define mainFontSize(x) [UIFont fontWithName:@"NotoSansHans-Medium" size:(x)];
-#define mainFontSize(x) [UIFont systemFontOfSize:(x)]
+#define mainFontSize(x) [UIFont systemFontOfSize:(x)*kScaleW]
 
 
 // 弹出提示框

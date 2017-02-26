@@ -19,6 +19,10 @@
 		492E8D971E61A47C00ED6321 /* LXSocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D961E61A47C00ED6321 /* LXSocketController.m */; };
 		492E8D9A1E61A4A500ED6321 /* LXSwitchSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D991E61A4A500ED6321 /* LXSwitchSceneController.m */; };
 		492E8D9D1E61A4EA00ED6321 /* LXSwitchGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D9C1E61A4EA00ED6321 /* LXSwitchGroupController.m */; };
+		492E8DA01E62ABDB00ED6321 /* LXSocketClockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8D9F1E62ABDB00ED6321 /* LXSocketClockController.m */; };
+		492E8DA31E62B02C00ED6321 /* LXMoreMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DA21E62B02C00ED6321 /* LXMoreMainCell.m */; };
+		492E8DA91E62BDAB00ED6321 /* LXClockPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DA81E62BDAB00ED6321 /* LXClockPickerView.m */; };
+		492E8DAC1E62BE3D00ED6321 /* LXTimeSelectPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DAB1E62BE3D00ED6321 /* LXTimeSelectPickerView.m */; };
 		495BD59D1E5F1DAE00D3F202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD59C1E5F1DAE00D3F202 /* main.m */; };
 		495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5A21E5F1DAE00D3F202 /* ViewController.m */; };
 		495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A41E5F1DAE00D3F202 /* Main.storyboard */; };
@@ -113,6 +117,14 @@
 		492E8D991E61A4A500ED6321 /* LXSwitchSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSwitchSceneController.m; sourceTree = "<group>"; };
 		492E8D9B1E61A4EA00ED6321 /* LXSwitchGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSwitchGroupController.h; sourceTree = "<group>"; };
 		492E8D9C1E61A4EA00ED6321 /* LXSwitchGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSwitchGroupController.m; sourceTree = "<group>"; };
+		492E8D9E1E62ABDB00ED6321 /* LXSocketClockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSocketClockController.h; sourceTree = "<group>"; };
+		492E8D9F1E62ABDB00ED6321 /* LXSocketClockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSocketClockController.m; sourceTree = "<group>"; };
+		492E8DA11E62B02C00ED6321 /* LXMoreMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMoreMainCell.h; sourceTree = "<group>"; };
+		492E8DA21E62B02C00ED6321 /* LXMoreMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMoreMainCell.m; sourceTree = "<group>"; };
+		492E8DA71E62BDAB00ED6321 /* LXClockPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXClockPickerView.h; sourceTree = "<group>"; };
+		492E8DA81E62BDAB00ED6321 /* LXClockPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXClockPickerView.m; sourceTree = "<group>"; };
+		492E8DAA1E62BE3D00ED6321 /* LXTimeSelectPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTimeSelectPickerView.h; sourceTree = "<group>"; };
+		492E8DAB1E62BE3D00ED6321 /* LXTimeSelectPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTimeSelectPickerView.m; sourceTree = "<group>"; };
 		495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhengTaiCSRMeshLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BD59C1E5F1DAE00D3F202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		495BD59E1E5F1DAE00D3F202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -741,6 +753,8 @@
 				492E8D991E61A4A500ED6321 /* LXSwitchSceneController.m */,
 				492E8D9B1E61A4EA00ED6321 /* LXSwitchGroupController.h */,
 				492E8D9C1E61A4EA00ED6321 /* LXSwitchGroupController.m */,
+				492E8D9E1E62ABDB00ED6321 /* LXSocketClockController.h */,
+				492E8D9F1E62ABDB00ED6321 /* LXSocketClockController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -766,6 +780,10 @@
 				495BD7B41E5F31A200D3F202 /* Cell */,
 				495BD7C01E5FE46200D3F202 /* LXLampCircleView.h */,
 				495BD7C11E5FE46200D3F202 /* LXLampCircleView.m */,
+				492E8DA71E62BDAB00ED6321 /* LXClockPickerView.h */,
+				492E8DA81E62BDAB00ED6321 /* LXClockPickerView.m */,
+				492E8DAA1E62BE3D00ED6321 /* LXTimeSelectPickerView.h */,
+				492E8DAB1E62BE3D00ED6321 /* LXTimeSelectPickerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -773,6 +791,8 @@
 		495BD7B41E5F31A200D3F202 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				492E8DA11E62B02C00ED6321 /* LXMoreMainCell.h */,
+				492E8DA21E62B02C00ED6321 /* LXMoreMainCell.m */,
 				492E8D6A1E61366200ED6321 /* LXDeviceTableCell.h */,
 				492E8D6B1E61366200ED6321 /* LXDeviceTableCell.m */,
 			);
@@ -1002,6 +1022,8 @@
 				495BD7371E5F214E00D3F202 /* LXColorFilterTool.m in Sources */,
 				495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */,
 				495BD7251E5F214E00D3F202 /* ZYWSideView.m in Sources */,
+				492E8DA31E62B02C00ED6321 /* LXMoreMainCell.m in Sources */,
+				492E8DAC1E62BE3D00ED6321 /* LXTimeSelectPickerView.m in Sources */,
 				492E8D941E61A43C00ED6321 /* LXSensorController.m in Sources */,
 				495BD71D1E5F214E00D3F202 /* LXSecondBaseViewController.m in Sources */,
 				492E8D8E1E61907200ED6321 /* LXLampRoomController.m in Sources */,
@@ -1010,12 +1032,14 @@
 				495BD72D1E5F214E00D3F202 /* UIBarButtonItem+Extension.m in Sources */,
 				495BD72E1E5F214E00D3F202 /* UIButton+EnlargeEdge.m in Sources */,
 				495BD71B1E5F214E00D3F202 /* LXBaseViewController.m in Sources */,
+				492E8DA01E62ABDB00ED6321 /* LXSocketClockController.m in Sources */,
 				495BD59D1E5F1DAE00D3F202 /* main.m in Sources */,
 				495BD7281E5F214E00D3F202 /* ZYWMessageViewController.m in Sources */,
 				492E8D8B1E617BD000ED6321 /* XJComboBoxView.m in Sources */,
 				492E8D911E61A41C00ED6321 /* LXCurtainController.m in Sources */,
 				492E8D781E616D2500ED6321 /* LXLampColorSettingController.m in Sources */,
 				495BD72A1E5F214E00D3F202 /* ZYWContainerViewController.m in Sources */,
+				492E8DA91E62BDAB00ED6321 /* LXClockPickerView.m in Sources */,
 				495BD7241E5F214E00D3F202 /* ZYWSideTableView.m in Sources */,
 				495BD6801E5F1ECD00D3F202 /* AppDelegate.m in Sources */,
 				495BD71F1E5F214E00D3F202 /* LXDock.m in Sources */,
