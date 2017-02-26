@@ -9,10 +9,12 @@
 #import "LXSocketClockController.h"
 #import "LXMoreMainCell.h"
 #import "LXTimeSelectPickerView.h"
+#import "LXWeeklySelectView.h"
 
 @interface LXSocketClockController (){
     UIView *bgView;
     LXTimeSelectPickerView *timeSelectPickerView;
+    LXWeeklySelectView *weeklySelectView;
 }
 
 @end
@@ -91,6 +93,12 @@
     [bgView addSubview: weekCell];
     [weekCell cellClickBlock:^{
         LXLog(@"%s",__func__);
+        
+        weeklySelectView = [[LXWeeklySelectView alloc] init];
+        
+        [weeklySelectView setLXWeeklySelectViewBlock:^(LXWeeklySelectViewType type, NSInteger repeat) {
+            LXLog(@"type = %d,repeatValue = %02x",type,repeat);
+        }];
         
         //        if (![self isBTConnected]) {
         //            LXShowToast(@"蓝牙未连接");
