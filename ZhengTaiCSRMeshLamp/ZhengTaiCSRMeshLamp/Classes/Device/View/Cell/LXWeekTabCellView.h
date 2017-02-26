@@ -18,6 +18,8 @@ typedef void (^LXWeekTabCellViewBlock)(NSInteger tag,BOOL isSelect);
 @property(nonatomic,weak)UIFont *font;
 @property(nonatomic,assign)BOOL isSelect;
 
+@property(nonatomic,assign)BOOL isDisSelect; // 选中时，是否不能取消
+
 -(void)setImageNor:(NSString*)nor select:(NSString*)select;
 
 -(void)setLXWeekTabCellViewBlockClick:(LXWeekTabCellViewBlock)block;

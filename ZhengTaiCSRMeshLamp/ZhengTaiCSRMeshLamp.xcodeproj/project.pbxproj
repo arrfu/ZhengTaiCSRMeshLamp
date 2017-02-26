@@ -25,6 +25,7 @@
 		492E8DAC1E62BE3D00ED6321 /* LXTimeSelectPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DAB1E62BE3D00ED6321 /* LXTimeSelectPickerView.m */; };
 		492E8DAF1E62DDF900ED6321 /* LXWeeklySelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DAE1E62DDF900ED6321 /* LXWeeklySelectView.m */; };
 		492E8DB21E62E9BC00ED6321 /* LXWeekTabCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DB11E62E9BC00ED6321 /* LXWeekTabCellView.m */; };
+		492E8DB51E630C8400ED6321 /* LXPowerSwitchSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DB41E630C8400ED6321 /* LXPowerSwitchSelectView.m */; };
 		495BD59D1E5F1DAE00D3F202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD59C1E5F1DAE00D3F202 /* main.m */; };
 		495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5A21E5F1DAE00D3F202 /* ViewController.m */; };
 		495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A41E5F1DAE00D3F202 /* Main.storyboard */; };
@@ -131,6 +132,8 @@
 		492E8DAE1E62DDF900ED6321 /* LXWeeklySelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXWeeklySelectView.m; sourceTree = "<group>"; };
 		492E8DB01E62E9BC00ED6321 /* LXWeekTabCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXWeekTabCellView.h; sourceTree = "<group>"; };
 		492E8DB11E62E9BC00ED6321 /* LXWeekTabCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXWeekTabCellView.m; sourceTree = "<group>"; };
+		492E8DB31E630C8400ED6321 /* LXPowerSwitchSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPowerSwitchSelectView.h; sourceTree = "<group>"; };
+		492E8DB41E630C8400ED6321 /* LXPowerSwitchSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPowerSwitchSelectView.m; sourceTree = "<group>"; };
 		495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhengTaiCSRMeshLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BD59C1E5F1DAE00D3F202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		495BD59E1E5F1DAE00D3F202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -792,6 +795,8 @@
 				492E8DAB1E62BE3D00ED6321 /* LXTimeSelectPickerView.m */,
 				492E8DAD1E62DDF900ED6321 /* LXWeeklySelectView.h */,
 				492E8DAE1E62DDF900ED6321 /* LXWeeklySelectView.m */,
+				492E8DB31E630C8400ED6321 /* LXPowerSwitchSelectView.h */,
+				492E8DB41E630C8400ED6321 /* LXPowerSwitchSelectView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1075,6 +1080,7 @@
 				492E8D6C1E61366200ED6321 /* LXDeviceTableCell.m in Sources */,
 				492E8D8A1E617BD000ED6321 /* UIView+ITTAdditions.m in Sources */,
 				492E8DB21E62E9BC00ED6321 /* LXWeekTabCellView.m in Sources */,
+				492E8DB51E630C8400ED6321 /* LXPowerSwitchSelectView.m in Sources */,
 				495BD7591E5F241B00D3F202 /* LXSettingMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

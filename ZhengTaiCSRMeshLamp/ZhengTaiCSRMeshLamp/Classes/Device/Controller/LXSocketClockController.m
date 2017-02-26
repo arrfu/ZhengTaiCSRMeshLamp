@@ -10,11 +10,13 @@
 #import "LXMoreMainCell.h"
 #import "LXTimeSelectPickerView.h"
 #import "LXWeeklySelectView.h"
+#import "LXPowerSwitchSelectView.h"
 
 @interface LXSocketClockController (){
     UIView *bgView;
     LXTimeSelectPickerView *timeSelectPickerView;
     LXWeeklySelectView *weeklySelectView;
+    LXPowerSwitchSelectView *powerSwitchSelectView;
 }
 
 @end
@@ -71,15 +73,8 @@
             LXLog(@"hour = %d,minute = %d",hour,minute);
             timeCell.secTitle = [NSString stringWithFormat:@"%02d 时 %02d 分",hour,minute];
         }];
-         
         
-//        if (![self isBTConnected]) {
-//            LXShowToast(@"蓝牙未连接");
-//            return ;
-//        }
-//        
-//        LXTimingLightController *vc = [[LXTimingLightController alloc ] init];
-//        [weakSelf.navigationController pushViewController:vc animated:YES];
+
     }];
     
     // 重复
@@ -91,6 +86,8 @@
     weekCell.titleColor = kTextColorC1;
     weekCell.secTitleColor = kTextColorC1;
     [bgView addSubview: weekCell];
+    
+    WEAKSELF_SS
     [weekCell cellClickBlock:^{
         LXLog(@"%s",__func__);
         
@@ -98,15 +95,19 @@
         
         [weeklySelectView setLXWeeklySelectViewBlock:^(LXWeeklySelectViewType type, NSInteger repeat) {
             LXLog(@"type = %d,repeatValue = %02x",type,repeat);
+            
+            if (type == LXWeeklySelectViewTypeOnce) {
+                weekCell.secTitle = LXLocalizedString(@"单次");
+            }
+            else if (type == LXWeeklySelectViewTypeEveryDay) {
+                weekCell.secTitle = LXLocalizedString(@"每天");
+            }
+            else{
+               weekCell.secTitle = [weakSelf getStringWithRepet:repeat];
+                
+            }
         }];
-        
-        //        if (![self isBTConnected]) {
-        //            LXShowToast(@"蓝牙未连接");
-        //            return ;
-        //        }
-        //
-        //        LXTimingLightController *vc = [[LXTimingLightController alloc ] init];
-        //        [weakSelf.navigationController pushViewController:vc animated:YES];
+
     }];
 
     
@@ -122,13 +123,13 @@
     [switchCell cellClickBlock:^{
         LXLog(@"%s",__func__);
         
-        //        if (![self isBTConnected]) {
-        //            LXShowToast(@"蓝牙未连接");
-        //            return ;
-        //        }
-        //
-        //        LXTimingLightController *vc = [[LXTimingLightController alloc ] init];
-        //        [weakSelf.navigationController pushViewController:vc animated:YES];
+        powerSwitchSelectView = [[LXPowerSwitchSelectView alloc] init];
+        
+        [powerSwitchSelectView setLXPowerSwitchSelectViewBlock:^(NSInteger index) {
+            LXLog(@"index = %d",index);
+            switchCell.secTitle = index==0? LXLocalizedString(@"打开"):LXLocalizedString(@"关闭");
+        }];
+
     }];
 
 
@@ -185,5 +186,65 @@
     
     
 }
+
+/**
+ * 根据重复周期获取文字
+ */
+-(NSString*)getStringWithRepet:(NSInteger)repeatValue{
+    NSMutableString *title = [NSMutableString stringWithFormat:@"%@",@"星期"];
+    
+    Byte repeat = repeatValue;
+    NSString *marginStr = @"、";
+    // 周一
+    if(repeat & 0x02){
+        [title appendFormat:@"%@%@",LXLocalizedString(@"一"),marginStr];
+    }
+    // 周二
+    if(repeat & 0x04){
+        [title appendFormat:@"%@%@",LXLocalizedString(@"二"),marginStr];
+    }
+    // 周三
+    if(repeat & 0x08){
+        [title appendFormat:@"%@%@",LXLocalizedString(@"三"),marginStr];
+    }
+    // 周四
+    if(repeat & 0x10){
+        [title appendFormat:@"%@%@",LXLocalizedString(@"四"),marginStr];
+    }
+    // 周五
+    if(repeat & 0x20){
+        [title appendFormat:@"%@%@",LXLocalizedString(@"五"),marginStr];
+    }
+    // 周六
+    if(repeat & 0x40){
+        [title appendFormat:@"%@%@",LXLocalizedString(@"六"),marginStr];
+    }
+    // 周日
+    if(repeat & 0x01){
+        [title appendFormat:@"%@%@",LXLocalizedString(@"日"),marginStr];
+    }
+    NSLog(@"%d",title.length);
+    if (title.length > 3) {
+        title = [NSMutableString stringWithString:[title substringWithRange:NSMakeRange(0, title.length-marginStr.length)]];
+    }
+    
+    
+//    // 工作日
+//    if(repeat == 0x3e){
+//        title = [[NSMutableString alloc] initWithFormat:@"%@",LXLocalizedString(@"工作日")];
+//    }
+    
+    // 每天
+    if(repeat == 0x7f){
+        title = [[NSMutableString alloc] initWithFormat:@"%@",LXLocalizedString(@"每天")];
+    }
+    
+    
+    //    NSString *newTitle = [NSString stringWithString:title];
+    
+    return title;
+    
+}
+
 
 @end

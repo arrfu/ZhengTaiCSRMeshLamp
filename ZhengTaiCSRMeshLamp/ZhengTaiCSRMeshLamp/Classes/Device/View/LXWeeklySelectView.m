@@ -147,6 +147,8 @@
         
         tabCell.isSelect = i==0? YES : NO; // 默认选中第一个
         
+        tabCell.isDisSelect = i<=2?YES : NO;
+        
         [tabView addSubview:tabCell];
         
         WEAKSELF_SS
@@ -203,6 +205,10 @@
     LXLog(@"%d",sender.tag);
     
     if (sender.tag == 100) {
+        
+        if (selectType==LXWeeklySelectViewTypeUserDefie && repeatValue==0) {
+            return ;
+        }
         // 确认
         if (self.weeklyBlock) {
             self.weeklyBlock(selectType,repeatValue);

@@ -90,8 +90,13 @@
 //    LXLog(@"%s",__func__);
 //    _stateIcon.selected = !_stateIcon.selected;
     
-    if (((self.tag >=LXWeekTabCellTag) && (self.tag <=(LXWeekTabCellTag+2))) &&  _stateIcon.selected) {
-        // 三大类型只能点击，不能取消
+//    if (((self.tag >=LXWeekTabCellTag) && (self.tag <=(LXWeekTabCellTag+2))) &&  _stateIcon.selected) {
+//        // 三大类型只能点击，不能取消
+//        return ;
+//    }
+    
+    if (self.isDisSelect &&  _stateIcon.selected) {
+        // 只能点击，不能取消
         return ;
     }
     
