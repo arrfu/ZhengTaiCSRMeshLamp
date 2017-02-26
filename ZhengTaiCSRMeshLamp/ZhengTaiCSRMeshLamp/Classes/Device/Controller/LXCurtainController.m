@@ -8,7 +8,9 @@
 
 #import "LXCurtainController.h"
 
-@interface LXCurtainController ()
+@interface LXCurtainController (){
+    UIImageView *bgImageView;
+}
 
 @end
 
@@ -18,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = LXColor(40,40,40);
+    self.view.backgroundColor = LXColor(56,91,182);
     
     self.title = self.title!=nil? self.title : LXLocalizedString(@"窗帘");
     self.navRightButton.image = nil;
@@ -37,9 +39,11 @@
  */
 -(void)createUI{
     
-    UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kNavHeight)];
-    //    bgImageView.image = [UIImage imageNamed:@"img_lamp_plate_outer_ring"];
+    
+    bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 364*kScaleW, 273*kScaleH)];
+    bgImageView.image = [UIImage imageNamed:@"Device-win-on"];
     //    bgImageView.backgroundColor = [UIColor whiteColor];
+    bgImageView.center = CGPointMake(kScreenWidth*0.5, (kScreenHeight-kNavHeight)*0.5-50*kScaleH);
     [self.view addSubview:bgImageView];
     
     // 创建开关按钮
@@ -78,6 +82,13 @@
 -(void)powerSwitchButtonnClick:(UIButton*)sender{
     LXLog(@"%d",sender.tag);
     sender.selected = !sender.selected;
+    
+    if (sender.selected) {
+        bgImageView.image = [UIImage imageNamed:@"Device-win-off"];
+    }
+    else{
+        bgImageView.image = [UIImage imageNamed:@"Device-win-on"];
+    }
 }
 
 
