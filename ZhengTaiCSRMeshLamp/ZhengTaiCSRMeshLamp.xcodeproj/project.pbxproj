@@ -26,6 +26,14 @@
 		492E8DAF1E62DDF900ED6321 /* LXWeeklySelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DAE1E62DDF900ED6321 /* LXWeeklySelectView.m */; };
 		492E8DB21E62E9BC00ED6321 /* LXWeekTabCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DB11E62E9BC00ED6321 /* LXWeekTabCellView.m */; };
 		492E8DB51E630C8400ED6321 /* LXPowerSwitchSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E8DB41E630C8400ED6321 /* LXPowerSwitchSelectView.m */; };
+		493A95001E6457E900E9FFD6 /* AliPayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A94F61E6457E900E9FFD6 /* AliPayItem.m */; };
+		493A95011E6457E900E9FFD6 /* AlipaySubItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A94F81E6457E900E9FFD6 /* AlipaySubItem.m */; };
+		493A95021E6457E900E9FFD6 /* AliPayViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A94FA1E6457E900E9FFD6 /* AliPayViews.m */; };
+		493A95031E6457E900E9FFD6 /* KeychainData.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A94FD1E6457E900E9FFD6 /* KeychainData.m */; };
+		493A95041E6457E900E9FFD6 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A94FF1E6457E900E9FFD6 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		493A95071E645EF200E9FFD6 /* LXSetpasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A95061E645EF200E9FFD6 /* LXSetpasswordViewController.m */; };
+		493A950A1E6463E100E9FFD6 /* LXSetMeshPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A95091E6463E100E9FFD6 /* LXSetMeshPasswordController.m */; };
+		493A950D1E646BD300E9FFD6 /* LXSceneTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 493A950C1E646BD300E9FFD6 /* LXSceneTableCell.m */; };
 		495BD59D1E5F1DAE00D3F202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD59C1E5F1DAE00D3F202 /* main.m */; };
 		495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495BD5A21E5F1DAE00D3F202 /* ViewController.m */; };
 		495BD5A61E5F1DAE00D3F202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BD5A41E5F1DAE00D3F202 /* Main.storyboard */; };
@@ -134,6 +142,23 @@
 		492E8DB11E62E9BC00ED6321 /* LXWeekTabCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXWeekTabCellView.m; sourceTree = "<group>"; };
 		492E8DB31E630C8400ED6321 /* LXPowerSwitchSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPowerSwitchSelectView.h; sourceTree = "<group>"; };
 		492E8DB41E630C8400ED6321 /* LXPowerSwitchSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPowerSwitchSelectView.m; sourceTree = "<group>"; };
+		493A94F51E6457E900E9FFD6 /* AliPayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayItem.h; sourceTree = "<group>"; };
+		493A94F61E6457E900E9FFD6 /* AliPayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayItem.m; sourceTree = "<group>"; };
+		493A94F71E6457E900E9FFD6 /* AlipaySubItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipaySubItem.h; sourceTree = "<group>"; };
+		493A94F81E6457E900E9FFD6 /* AlipaySubItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlipaySubItem.m; sourceTree = "<group>"; };
+		493A94F91E6457E900E9FFD6 /* AliPayViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayViews.h; sourceTree = "<group>"; };
+		493A94FA1E6457E900E9FFD6 /* AliPayViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayViews.m; sourceTree = "<group>"; };
+		493A94FB1E6457E900E9FFD6 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		493A94FC1E6457E900E9FFD6 /* KeychainData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainData.h; sourceTree = "<group>"; };
+		493A94FD1E6457E900E9FFD6 /* KeychainData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainData.m; sourceTree = "<group>"; };
+		493A94FE1E6457E900E9FFD6 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		493A94FF1E6457E900E9FFD6 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		493A95051E645EF200E9FFD6 /* LXSetpasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSetpasswordViewController.h; sourceTree = "<group>"; };
+		493A95061E645EF200E9FFD6 /* LXSetpasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSetpasswordViewController.m; sourceTree = "<group>"; };
+		493A95081E6463E100E9FFD6 /* LXSetMeshPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSetMeshPasswordController.h; sourceTree = "<group>"; };
+		493A95091E6463E100E9FFD6 /* LXSetMeshPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSetMeshPasswordController.m; sourceTree = "<group>"; };
+		493A950B1E646BD300E9FFD6 /* LXSceneTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSceneTableCell.h; sourceTree = "<group>"; };
+		493A950C1E646BD300E9FFD6 /* LXSceneTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSceneTableCell.m; sourceTree = "<group>"; };
 		495BD5981E5F1DAD00D3F202 /* ZhengTaiCSRMeshLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhengTaiCSRMeshLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BD59C1E5F1DAE00D3F202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		495BD59E1E5F1DAE00D3F202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -286,6 +311,24 @@
 				492E8D831E617BD000ED6321 /* UpAccessory.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		493A94F41E6457E900E9FFD6 /* AliSDK */ = {
+			isa = PBXGroup;
+			children = (
+				493A94F51E6457E900E9FFD6 /* AliPayItem.h */,
+				493A94F61E6457E900E9FFD6 /* AliPayItem.m */,
+				493A94F71E6457E900E9FFD6 /* AlipaySubItem.h */,
+				493A94F81E6457E900E9FFD6 /* AlipaySubItem.m */,
+				493A94F91E6457E900E9FFD6 /* AliPayViews.h */,
+				493A94FA1E6457E900E9FFD6 /* AliPayViews.m */,
+				493A94FB1E6457E900E9FFD6 /* Header.h */,
+				493A94FC1E6457E900E9FFD6 /* KeychainData.h */,
+				493A94FD1E6457E900E9FFD6 /* KeychainData.m */,
+				493A94FE1E6457E900E9FFD6 /* KeychainItemWrapper.h */,
+				493A94FF1E6457E900E9FFD6 /* KeychainItemWrapper.m */,
+			);
+			path = AliSDK;
 			sourceTree = "<group>";
 		};
 		495BD58F1E5F1DAD00D3F202 = {
@@ -601,6 +644,10 @@
 			children = (
 				495BD7531E5F241B00D3F202 /* LXSettingMainController.h */,
 				495BD7541E5F241B00D3F202 /* LXSettingMainController.m */,
+				493A95051E645EF200E9FFD6 /* LXSetpasswordViewController.h */,
+				493A95061E645EF200E9FFD6 /* LXSetpasswordViewController.m */,
+				493A95081E6463E100E9FFD6 /* LXSetMeshPasswordController.h */,
+				493A95091E6463E100E9FFD6 /* LXSetMeshPasswordController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -622,6 +669,7 @@
 		495BD7571E5F241B00D3F202 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				493A94F41E6457E900E9FFD6 /* AliSDK */,
 				495BD7581E5F241B00D3F202 /* Cell */,
 			);
 			path = View;
@@ -728,6 +776,8 @@
 		495BD7AB1E5F319C00D3F202 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				493A950B1E646BD300E9FFD6 /* LXSceneTableCell.h */,
+				493A950C1E646BD300E9FFD6 /* LXSceneTableCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1023,8 +1073,10 @@
 				495BD7381E5F214E00D3F202 /* LXDelayBlockTimer.m in Sources */,
 				495BD73A1E5F214E00D3F202 /* LXRGBTools.m in Sources */,
 				495BD73F1E5F214E00D3F202 /* NSObject+ZXPUnicode.m in Sources */,
+				493A95011E6457E900E9FFD6 /* AlipaySubItem.m in Sources */,
 				495BD7771E5F29C300D3F202 /* UIView+JFExtension.m in Sources */,
 				495BD73E1E5F214E00D3F202 /* NSDictionary+ZXPUnicode.m in Sources */,
+				493A950A1E6463E100E9FFD6 /* LXSetMeshPasswordController.m in Sources */,
 				495BD72C1E5F214E00D3F202 /* Toast+UIView.m in Sources */,
 				495BD7291E5F214E00D3F202 /* MYDataViewController.m in Sources */,
 				495BD7A31E5F319500D3F202 /* LXEreaMainController.m in Sources */,
@@ -1035,6 +1087,7 @@
 				495BD7271E5F214E00D3F202 /* ZYWRootViewController.m in Sources */,
 				495BD7341E5F214E00D3F202 /* HYBNetworking.m in Sources */,
 				495BD7371E5F214E00D3F202 /* LXColorFilterTool.m in Sources */,
+				493A95001E6457E900E9FFD6 /* AliPayItem.m in Sources */,
 				495BD5A31E5F1DAE00D3F202 /* ViewController.m in Sources */,
 				495BD7251E5F214E00D3F202 /* ZYWSideView.m in Sources */,
 				492E8DA31E62B02C00ED6321 /* LXMoreMainCell.m in Sources */,
@@ -1050,7 +1103,9 @@
 				492E8DA01E62ABDB00ED6321 /* LXSocketClockController.m in Sources */,
 				495BD59D1E5F1DAE00D3F202 /* main.m in Sources */,
 				495BD7281E5F214E00D3F202 /* ZYWMessageViewController.m in Sources */,
+				493A95021E6457E900E9FFD6 /* AliPayViews.m in Sources */,
 				492E8D8B1E617BD000ED6321 /* XJComboBoxView.m in Sources */,
+				493A95071E645EF200E9FFD6 /* LXSetpasswordViewController.m in Sources */,
 				492E8D911E61A41C00ED6321 /* LXCurtainController.m in Sources */,
 				492E8D781E616D2500ED6321 /* LXLampColorSettingController.m in Sources */,
 				495BD72A1E5F214E00D3F202 /* ZYWContainerViewController.m in Sources */,
@@ -1058,6 +1113,7 @@
 				495BD7241E5F214E00D3F202 /* ZYWSideTableView.m in Sources */,
 				495BD6801E5F1ECD00D3F202 /* AppDelegate.m in Sources */,
 				495BD71F1E5F214E00D3F202 /* LXDock.m in Sources */,
+				493A950D1E646BD300E9FFD6 /* LXSceneTableCell.m in Sources */,
 				492E8D9A1E61A4A500ED6321 /* LXSwitchSceneController.m in Sources */,
 				495BD71C1E5F214E00D3F202 /* LXNavigationController.m in Sources */,
 				495BD7201E5F214E00D3F202 /* LXDockController.m in Sources */,
@@ -1066,6 +1122,7 @@
 				495BD7321E5F214E00D3F202 /* UIView+Extension.m in Sources */,
 				495BD7331E5F214E00D3F202 /* UIView+SHCZExt.m in Sources */,
 				495BD73C1E5F214E00D3F202 /* RGB-HSL.m in Sources */,
+				493A95031E6457E900E9FFD6 /* KeychainData.m in Sources */,
 				495BD7AC1E5F319C00D3F202 /* LXSceneMainController.m in Sources */,
 				495BD7231E5F214E00D3F202 /* ZYWContactViewController.m in Sources */,
 				492E8D9D1E61A4EA00ED6321 /* LXSwitchGroupController.m in Sources */,
@@ -1082,6 +1139,7 @@
 				492E8DB21E62E9BC00ED6321 /* LXWeekTabCellView.m in Sources */,
 				492E8DB51E630C8400ED6321 /* LXPowerSwitchSelectView.m in Sources */,
 				495BD7591E5F241B00D3F202 /* LXSettingMainController.m in Sources */,
+				493A95041E6457E900E9FFD6 /* KeychainItemWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

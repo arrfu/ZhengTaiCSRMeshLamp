@@ -199,7 +199,10 @@
         [btn setImage:[UIImage imageNamed:imgStr] forState:UIControlStateNormal];
         //        [btn setImage:[UIImage imageNamed:@"Device-rotatio-left"] forState:UIControlStateHighlighted];
         
-        
+        if (i == 0) {
+            // 暂时不做自测功能
+            btn.hidden = YES;
+        }
         [btn addTarget:self action:@selector(checkAndAddDeviceButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn];
         
